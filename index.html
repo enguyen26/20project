@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ColorSplash Travel Blog</title>
+    <meta name="description" content="A colorful, fun travel blog full of tips, photos, and inspiration." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23ff6b6b'/><text x='50' y='60' text-anchor='middle' font-size='60' fill='white'>✈️</text></svg>">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">ColorSplash</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#hero">Home</a>
+          <a href="#featured">Featured</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" aria-label="Toggle theme">🌈</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section">
+        <div class="container hero-inner">
+          <h1><span class="brand">ColorSplash</span> Travel Blog</h1>
+          <p>Bright places, bold flavors, and stories from the road.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#featured">Explore Stories</a>
+            <a class="btn btn-ghost" href="#gallery">See the Gallery</a>
+          </div>
+        </div>
+        <div class="confetti" aria-hidden="true"></div>
+      </section>
+
+      <section id="featured" class="section">
+        <div class="container">
+          <h2 class="section-title">Featured Adventures</h2>
+          <div class="card-list">
+            <article class="card" data-region="europe">
+              <div class="card-img" style="--img:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1600&auto=format&fit=crop');"></div>
+              <div class="card-body">
+                <h3>Paris Pastel Mornings</h3>
+                <p>Croissants, cobblestones, and sunrise hues along the Seine.</p>
+                <div class="chip-row">
+                  <span class="chip">Europe</span>
+                  <span class="chip">City</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-region="asia">
+              <div class="card-img" style="--img:url('https://images.unsplash.com/photo-1494475673543-6a6a27143b22?q=80&w=1600&auto=format&fit=crop');"></div>
+              <div class="card-body">
+                <h3>Bangkok Night Bites</h3>
+                <p>Neon-lit markets, sizzling woks, and sweet mango sticky rice.</p>
+                <div class="chip-row">
+                  <span class="chip">Asia</span>
+                  <span class="chip">Food</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-region="americas">
+              <div class="card-img" style="--img:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop');"></div>
+              <div class="card-body">
+                <h3>Patagonia Painted Peaks</h3>
+                <p>Wind, wilderness, and cotton-candy skies over jagged giants.</p>
+                <div class="chip-row">
+                  <span class="chip">Americas</span>
+                  <span class="chip">Hike</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section alt">
+        <div class="container">
+          <div class="gallery-header">
+            <h2 class="section-title">Photo Gallery</h2>
+            <div class="filters" role="group" aria-label="Filter gallery by region">
+              <button class="filter-btn is-active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="europe">Europe</button>
+              <button class="filter-btn" data-filter="asia">Asia</button>
+              <button class="filter-btn" data-filter="americas">Americas</button>
+            </div>
+          </div>
+          <div class="masonry" id="galleryGrid">
+            <figure class="tile" data-region="europe"><img alt="Santorini blues" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1600&auto=format&fit=crop"><figcaption>Santorini blues</figcaption></figure>
+            <figure class="tile" data-region="asia"><img alt="Kyoto temple" src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=1600&auto=format&fit=crop"><figcaption>Kyoto calm</figcaption></figure>
+            <figure class="tile" data-region="americas"><img alt="Peru rainbow mountain" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop"><figcaption>Rainbow ridge</figcaption></figure>
+            <figure class="tile" data-region="europe"><img alt="Swiss lake" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop"><figcaption>Alpine glass</figcaption></figure>
+            <figure class="tile" data-region="asia"><img alt="Vietnam lanterns" src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?q=80&w=1600&auto=format&fit=crop"><figcaption>Lantern glow</figcaption></figure>
+            <figure class="tile" data-region="americas"><img alt="NYC skyline" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop"><figcaption>Skyline spark</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About This Blog</h2>
+          <p>
+            Hi! I'm Elina. I collect colors from every corner of the planet —
+            beaches that look like sherbet, forests that glow emerald, and
+            cities painted in neon. Welcome to my scrapbook of sights, bites,
+            and bright tips for your next trip.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Say Hello</h2>
+          <form class="contact-form" name="contact" onsubmit="return false">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Rainbow Explorer" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell me your favorite color!"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send ✈️</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> ColorSplash by Elina Nguyen</p>
+        <a class="top-link" href="#hero" aria-label="Back to top">↑ Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
+
