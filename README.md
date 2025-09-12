@@ -9,7 +9,7 @@ You can open `index.html` directly in your browser. For best results with modern
 ### Python
 
 ```bash
-cd /Users/elinanguyen/coding/introtocodingenguyen
+cd /Users/elinanguyen/coding/20percent
 python3 -m http.server 8080
 ```
 
