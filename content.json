@@ -20,6 +20,48 @@
       "ariaLabel": "Port of Cassis, France"
     },
     {
+      "title": "Marseille, France",
+      "meta": "Vieux-Port • Bouillabaisse, Mucem, and street art in Le Panier",
+      "image": "images/marseille.jpg",
+      "href": "#",
+      "ariaLabel": "Marseille, France"
+    },
+    {
+      "title": "Aix-en-Provence, France",
+      "meta": "Markets • Cours Mirabeau, fountains, and Cézanne's atelier",
+      "image": "images/aix-en-provence.jpg",
+      "href": "#",
+      "ariaLabel": "Aix-en-Provence, France"
+    },
+    {
+      "title": "Nice, France",
+      "meta": "Promenade des Anglais • Old Town alleys and beach clubs",
+      "image": "images/nice.jpg",
+      "href": "#",
+      "ariaLabel": "Nice, France"
+    },
+    {
+      "title": "Èze Village, France",
+      "meta": "Hilltop • Exotic garden views and stone lanes",
+      "image": "images/eze.jpg",
+      "href": "#",
+      "ariaLabel": "Èze Village, France"
+    },
+    {
+      "title": "Monaco",
+      "meta": "Monte-Carlo • Port Hercule and cliffside walks",
+      "image": "images/monaco.jpg",
+      "href": "#",
+      "ariaLabel": "Monaco"
+    },
+    {
+      "title": "Beaulieu-sur-Mer, France",
+      "meta": "Belle Époque • Plage de la Petite Afrique and villa strolls",
+      "image": "images/beaulieu.jpg",
+      "href": "#",
+      "ariaLabel": "Beaulieu-sur-Mer, France"
+    },
+    {
       "title": "Santorini, Greece",
       "meta": "Island guide • Where to stay and best viewpoints",
       "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1600&auto=format&fit=crop",
@@ -46,6 +88,42 @@
       "title": "South of Provence: Marseille to Monaco",
       "excerpt": "First stop: Port of Cassis — turquoise calanques, stone coves, and a perfect seaside base for Aix, Nice, Èze, Monaco, and Beaulieu-sur-Mer.",
       "image": "images/cassis-port.jpg",
+      "href": "#"
+    },
+    {
+      "title": "Marseille Weekend Guide",
+      "excerpt": "Vieux-Port sunsets, Le Panier’s steps, and a bouillabaisse to remember.",
+      "image": "images/marseille.jpg",
+      "href": "#"
+    },
+    {
+      "title": "Aix-en-Provence in a Day",
+      "excerpt": "Markets on Cours Mirabeau, fountains, and Cézanne’s view of Sainte-Victoire.",
+      "image": "images/aix-en-provence.jpg",
+      "href": "#"
+    },
+    {
+      "title": "Nice Old Town Stroll",
+      "excerpt": "Gelato lanes, pebble beaches, and sunrise on the Promenade.",
+      "image": "images/nice.jpg",
+      "href": "#"
+    },
+    {
+      "title": "Èze Village Lookouts",
+      "excerpt": "A steep climb to exotic gardens and Riviera panoramas.",
+      "image": "images/eze.jpg",
+      "href": "#"
+    },
+    {
+      "title": "Monaco by Foot",
+      "excerpt": "From the palace to Port Hercule — a compact loop of highlights.",
+      "image": "images/monaco.jpg",
+      "href": "#"
+    },
+    {
+      "title": "Beaulieu-sur-Mer Beach Day",
+      "excerpt": "Belle Époque villas and an easy swim at Petite Afrique.",
+      "image": "images/beaulieu.jpg",
       "href": "#"
     },
     {
