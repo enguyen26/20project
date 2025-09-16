@@ -13,6 +13,13 @@
   },
   "destinations": [
     {
+      "title": "Port of Cassis, France",
+      "meta": "Côte d'Azur • Calanques, pastel villas, and seaside lunches",
+      "image": "images/cassis-port.jpg",
+      "href": "#",
+      "ariaLabel": "Port of Cassis, France"
+    },
+    {
       "title": "Santorini, Greece",
       "meta": "Island guide • Where to stay and best viewpoints",
       "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1600&auto=format&fit=crop",
@@ -35,6 +42,12 @@
     }
   ],
   "posts": [
+    {
+      "title": "South of Provence: Marseille to Monaco",
+      "excerpt": "First stop: Port of Cassis — turquoise calanques, stone coves, and a perfect seaside base for Aix, Nice, Èze, Monaco, and Beaulieu-sur-Mer.",
+      "image": "images/cassis-port.jpg",
+      "href": "#"
+    },
     {
       "title": "How we plan two-week trips",
       "excerpt": "Our step-by-step checklist for picking routes, stays, and experiences.",
