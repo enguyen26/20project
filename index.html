@@ -3,145 +3,127 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ColorSplash Travel Blog</title>
-    <meta name="description" content="A colorful, fun travel blog full of tips, photos, and inspiration." />
+    <title>ColorSplash — Travel Guides & Journal</title>
+    <meta name="description" content="Minimal, image-forward travel guides and journal entries inspired by Find Us Lost." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23ff6b6b'/><text x='50' y='60' text-anchor='middle' font-size='60' fill='white'>✈️</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>'>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href="#">ColorSplash</a>
+        <a class="logo" href="/">ColorSplash</a>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <nav class="site-nav" aria-label="Main navigation">
-          <a href="#hero">Home</a>
-          <a href="#featured">Featured</a>
-          <a href="#gallery">Gallery</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#journal">Journal</a>
           <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="#newsletter">Subscribe</a>
         </nav>
-        <button class="theme-toggle" aria-label="Toggle theme">🌈</button>
       </div>
     </header>
 
     <main>
-      <section id="hero" class="hero section">
-        <div class="container hero-inner">
-          <h1><span class="brand">ColorSplash</span> Travel Blog</h1>
-          <p>Bright places, bold flavors, and stories from the road.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#featured">Explore Stories</a>
-            <a class="btn btn-ghost" href="#gallery">See the Gallery</a>
-          </div>
+      <section id="hero" class="hero">
+        <div class="hero-media" style="--img:url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2400&auto=format&fit=crop');"></div>
+        <div class="container hero-copy">
+          <h1 class="display">Curated Travel Guides</h1>
+          <p class="lede">A minimalist journal of destinations we love: where to stay, eat, and wander.</p>
+          <a class="btn btn-primary" href="#destinations">Explore Destinations</a>
         </div>
-        <div class="confetti" aria-hidden="true"></div>
       </section>
 
-      <section id="featured" class="section">
+      <section id="destinations" class="section">
         <div class="container">
-          <h2 class="section-title">Featured Adventures</h2>
-          <div class="card-list">
-            <article class="card" data-region="europe">
-              <div class="card-img" style="--img:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1600&auto=format&fit=crop');"></div>
+          <div class="section-header">
+            <h2>Destinations</h2>
+            <a class="link" href="#journal">View all guides →</a>
+          </div>
+          <div class="grid cards">
+            <article class="card">
+              <a class="card-media" href="#" style="--img:url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1600&auto=format&fit=crop');" aria-label="Santorini, Greece"></a>
               <div class="card-body">
-                <h3>Paris Pastel Mornings</h3>
-                <p>Croissants, cobblestones, and sunrise hues along the Seine.</p>
-                <div class="chip-row">
-                  <span class="chip">Europe</span>
-                  <span class="chip">City</span>
-                </div>
+                <h3 class="card-title"><a href="#">Santorini, Greece</a></h3>
+                <p class="card-meta">Island guide • Where to stay and best viewpoints</p>
               </div>
             </article>
-            <article class="card" data-region="asia">
-              <div class="card-img" style="--img:url('https://images.unsplash.com/photo-1494475673543-6a6a27143b22?q=80&w=1600&auto=format&fit=crop');"></div>
+            <article class="card">
+              <a class="card-media" href="#" style="--img:url('https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1600&auto=format&fit=crop');" aria-label="Kyoto, Japan"></a>
               <div class="card-body">
-                <h3>Bangkok Night Bites</h3>
-                <p>Neon-lit markets, sizzling woks, and sweet mango sticky rice.</p>
-                <div class="chip-row">
-                  <span class="chip">Asia</span>
-                  <span class="chip">Food</span>
-                </div>
+                <h3 class="card-title"><a href="#">Kyoto, Japan</a></h3>
+                <p class="card-meta">City guide • Temples, tea houses, hidden streets</p>
               </div>
             </article>
-            <article class="card" data-region="americas">
-              <div class="card-img" style="--img:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop');"></div>
+            <article class="card">
+              <a class="card-media" href="#" style="--img:url('https://images.unsplash.com/photo-1505764706515-aa95265c5abc?q=80&w=1600&auto=format&fit=crop');" aria-label="Tulum, Mexico"></a>
               <div class="card-body">
-                <h3>Patagonia Painted Peaks</h3>
-                <p>Wind, wilderness, and cotton-candy skies over jagged giants.</p>
-                <div class="chip-row">
-                  <span class="chip">Americas</span>
-                  <span class="chip">Hike</span>
-                </div>
+                <h3 class="card-title"><a href="#">Tulum, Mexico</a></h3>
+                <p class="card-meta">Beach guide • Cenotes, cafes, and day trips</p>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="gallery" class="section alt">
+      <section id="journal" class="section alt">
         <div class="container">
-          <div class="gallery-header">
-            <h2 class="section-title">Photo Gallery</h2>
-            <div class="filters" role="group" aria-label="Filter gallery by region">
-              <button class="filter-btn is-active" data-filter="all">All</button>
-              <button class="filter-btn" data-filter="europe">Europe</button>
-              <button class="filter-btn" data-filter="asia">Asia</button>
-              <button class="filter-btn" data-filter="americas">Americas</button>
-            </div>
+          <div class="section-header">
+            <h2>From the Journal</h2>
+            <a class="link" href="#">All posts →</a>
           </div>
-          <div class="masonry" id="galleryGrid">
-            <figure class="tile" data-region="europe"><img alt="Santorini blues" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1600&auto=format&fit=crop"><figcaption>Santorini blues</figcaption></figure>
-            <figure class="tile" data-region="asia"><img alt="Kyoto temple" src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=1600&auto=format&fit=crop"><figcaption>Kyoto calm</figcaption></figure>
-            <figure class="tile" data-region="americas"><img alt="Peru rainbow mountain" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop"><figcaption>Rainbow ridge</figcaption></figure>
-            <figure class="tile" data-region="europe"><img alt="Swiss lake" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop"><figcaption>Alpine glass</figcaption></figure>
-            <figure class="tile" data-region="asia"><img alt="Vietnam lanterns" src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?q=80&w=1600&auto=format&fit=crop"><figcaption>Lantern glow</figcaption></figure>
-            <figure class="tile" data-region="americas"><img alt="NYC skyline" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop"><figcaption>Skyline spark</figcaption></figure>
+          <div class="grid posts">
+            <article class="post">
+              <a class="post-media" href="#" style="--img:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');"></a>
+              <div class="post-body">
+                <h3 class="post-title"><a href="#">How we plan two-week trips</a></h3>
+                <p class="post-excerpt">Our step-by-step checklist for picking routes, stays, and experiences.</p>
+              </div>
+            </article>
+            <article class="post">
+              <a class="post-media" href="#" style="--img:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1600&auto=format&fit=crop');"></a>
+              <div class="post-body">
+                <h3 class="post-title"><a href="#">Carry-on only: packing list</a></h3>
+                <p class="post-excerpt">Everything we bring for long-haul travel in a single backpack.</p>
+              </div>
+            </article>
+            <article class="post">
+              <a class="post-media" href="#" style="--img:url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1600&auto=format&fit=crop');"></a>
+              <div class="post-body">
+                <h3 class="post-title"><a href="#">Best sunrise spots in Europe</a></h3>
+                <p class="post-excerpt">A shortlist of viewpoints worth the early wake-up call.</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
       <section id="about" class="section">
-        <div class="container">
-          <h2 class="section-title">About This Blog</h2>
-          <p>
-            Hi! I'm Elina. I collect colors from every corner of the planet —
-            beaches that look like sherbet, forests that glow emerald, and
-            cities painted in neon. Welcome to my scrapbook of sights, bites,
-            and bright tips for your next trip.
-          </p>
+        <div class="container narrow">
+          <h2>About</h2>
+          <p>Hi, I’m Elina. This site is a clean, photo-first collection of travel guides and notes — designed to be calm and easy to browse.</p>
         </div>
       </section>
 
-      <section id="contact" class="section alt">
-        <div class="container">
-          <h2 class="section-title">Say Hello</h2>
-          <form class="contact-form" name="contact" onsubmit="return false">
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Rainbow Explorer" required />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="you@example.com" required />
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="4" placeholder="Tell me your favorite color!"></textarea>
-            </label>
-            <button type="submit" class="btn btn-primary">Send ✈️</button>
+      <section id="newsletter" class="section">
+        <div class="container narrow">
+          <div class="newsletter">
+            <h2>Get new guides in your inbox</h2>
+            <form class="newsletter-form" onsubmit="return false">
+              <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
             <p class="form-status" role="status" aria-live="polite"></p>
-          </form>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© <span id="year"></span> ColorSplash by Elina Nguyen</p>
-        <a class="top-link" href="#hero" aria-label="Back to top">↑ Back to top</a>
+        <p>© <span id="year"></span> ColorSplash</p>
+        <a class="top-link" href="#hero" aria-label="Back to top">Back to top ↑</a>
       </div>
     </footer>
 
