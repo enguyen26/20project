@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>'>
+    <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>'>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href="/">Drifted</a>
+        <a class="logo" id="siteLogo" href="/">Drifted</a>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <nav class="site-nav" aria-label="Main navigation">
           <a href="#destinations">Destinations</a>
@@ -27,11 +27,11 @@
 
     <main>
       <section id="hero" class="hero">
-        <div class="hero-media" style="--img:url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2400&auto=format&fit=crop');"></div>
+        <div class="hero-media" id="heroMedia" style="--img:url('');"></div>
         <div class="container hero-copy">
-          <h1 class="display">Curated Travel Guides</h1>
-          <p class="lede">A minimalist journal of destinations we love: where to stay, eat, and wander.</p>
-          <a class="btn btn-primary" href="#destinations">Explore Destinations</a>
+          <h1 class="display" id="heroTitle">Curated Travel Guides</h1>
+          <p class="lede" id="heroLede">A minimalist journal of destinations we love: where to stay, eat, and wander.</p>
+          <a class="btn btn-primary" id="heroCta" href="#destinations">Explore Destinations</a>
         </div>
       </section>
 
@@ -41,29 +41,7 @@
             <h2>Destinations</h2>
             <a class="link" href="#journal">View all guides →</a>
           </div>
-          <div class="grid cards">
-            <article class="card">
-              <a class="card-media" href="#" style="--img:url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1600&auto=format&fit=crop');" aria-label="Santorini, Greece"></a>
-              <div class="card-body">
-                <h3 class="card-title"><a href="#">Santorini, Greece</a></h3>
-                <p class="card-meta">Island guide • Where to stay and best viewpoints</p>
-              </div>
-            </article>
-            <article class="card">
-              <a class="card-media" href="#" style="--img:url('https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1600&auto=format&fit=crop');" aria-label="Kyoto, Japan"></a>
-              <div class="card-body">
-                <h3 class="card-title"><a href="#">Kyoto, Japan</a></h3>
-                <p class="card-meta">City guide • Temples, tea houses, hidden streets</p>
-              </div>
-            </article>
-            <article class="card">
-              <a class="card-media" href="#" style="--img:url('https://images.unsplash.com/photo-1505764706515-aa95265c5abc?q=80&w=1600&auto=format&fit=crop');" aria-label="Tulum, Mexico"></a>
-              <div class="card-body">
-                <h3 class="card-title"><a href="#">Tulum, Mexico</a></h3>
-                <p class="card-meta">Beach guide • Cenotes, cafes, and day trips</p>
-              </div>
-            </article>
-          </div>
+          <div class="grid cards" id="destinationsGrid"></div>
         </div>
       </section>
 
@@ -73,36 +51,14 @@
             <h2>From the Journal</h2>
             <a class="link" href="#">All posts →</a>
           </div>
-          <div class="grid posts">
-            <article class="post">
-              <a class="post-media" href="#" style="--img:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');"></a>
-              <div class="post-body">
-                <h3 class="post-title"><a href="#">How we plan two-week trips</a></h3>
-                <p class="post-excerpt">Our step-by-step checklist for picking routes, stays, and experiences.</p>
-              </div>
-            </article>
-            <article class="post">
-              <a class="post-media" href="#" style="--img:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1600&auto=format&fit=crop');"></a>
-              <div class="post-body">
-                <h3 class="post-title"><a href="#">Carry-on only: packing list</a></h3>
-                <p class="post-excerpt">Everything we bring for long-haul travel in a single backpack.</p>
-              </div>
-            </article>
-            <article class="post">
-              <a class="post-media" href="#" style="--img:url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1600&auto=format&fit=crop');"></a>
-              <div class="post-body">
-                <h3 class="post-title"><a href="#">Best sunrise spots in Europe</a></h3>
-                <p class="post-excerpt">A shortlist of viewpoints worth the early wake-up call.</p>
-              </div>
-            </article>
-          </div>
+          <div class="grid posts" id="postsGrid"></div>
         </div>
       </section>
 
       <section id="about" class="section">
         <div class="container narrow">
           <h2>About</h2>
-          <p>Hi, I’m Elina. This site is a clean, photo-first collection of travel guides and notes — designed to be calm and easy to browse.</p>
+          <p id="aboutText">Hi, I’m Elina. This site is a clean, photo-first collection of travel guides and notes — designed to be calm and easy to browse.</p>
         </div>
       </section>
 
@@ -122,7 +78,7 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© <span id="year"></span> Drifted</p>
+        <p>© <span id="year"></span> <span id="footerName">Drifted</span></p>
         <a class="top-link" href="#hero" aria-label="Back to top">Back to top ↑</a>
       </div>
     </footer>

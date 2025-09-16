@@ -1,0 +1,60 @@
+{
+  "site": {
+    "name": "Drifted",
+    "faviconEmoji": "✈️",
+    "copyrightName": "Drifted"
+  },
+  "hero": {
+    "image": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2400&auto=format&fit=crop",
+    "title": "Curated Travel Guides",
+    "lede": "A minimalist journal of destinations we love: where to stay, eat, and wander.",
+    "ctaLabel": "Explore Destinations",
+    "ctaHref": "#destinations"
+  },
+  "destinations": [
+    {
+      "title": "Santorini, Greece",
+      "meta": "Island guide • Where to stay and best viewpoints",
+      "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1600&auto=format&fit=crop",
+      "href": "#",
+      "ariaLabel": "Santorini, Greece"
+    },
+    {
+      "title": "Kyoto, Japan",
+      "meta": "City guide • Temples, tea houses, hidden streets",
+      "image": "https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1600&auto=format&fit=crop",
+      "href": "#",
+      "ariaLabel": "Kyoto, Japan"
+    },
+    {
+      "title": "Tulum, Mexico",
+      "meta": "Beach guide • Cenotes, cafes, and day trips",
+      "image": "https://images.unsplash.com/photo-1505764706515-aa95265c5abc?q=80&w=1600&auto=format&fit=crop",
+      "href": "#",
+      "ariaLabel": "Tulum, Mexico"
+    }
+  ],
+  "posts": [
+    {
+      "title": "How we plan two-week trips",
+      "excerpt": "Our step-by-step checklist for picking routes, stays, and experiences.",
+      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop",
+      "href": "#"
+    },
+    {
+      "title": "Carry-on only: packing list",
+      "excerpt": "Everything we bring for long-haul travel in a single backpack.",
+      "image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1600&auto=format&fit=crop",
+      "href": "#"
+    },
+    {
+      "title": "Best sunrise spots in Europe",
+      "excerpt": "A shortlist of viewpoints worth the early wake-up call.",
+      "image": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1600&auto=format&fit=crop",
+      "href": "#"
+    }
+  ],
+  "about": {
+    "text": "Hi, I’m Elina. This site is a clean, photo-first collection of travel guides and notes — designed to be calm and easy to browse."
+  }
+}
