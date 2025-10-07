@@ -3,17 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Page title updates dynamically from content.json -> site.name -->
     <title>Drifted — Travel Guides & Journal</title>
     <meta name="description" content="Minimal, image-forward travel guides and journal entries inspired by Find Us Lost." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts: Playfair for headings, Inter for body -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Favicon is an inline SVG emoji; script updates this via #favicon from content.json.site.faviconEmoji -->
     <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>'>
   </head>
   <body>
+    <!-- Header: sticky nav with site logo and links -->
     <header class="site-header">
       <div class="container header-inner">
+        <!-- Logo text replaced from content.json.site.name -->
         <a class="logo" id="siteLogo" href="/">Drifted</a>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <nav class="site-nav" aria-label="Main navigation">
@@ -26,6 +31,9 @@
     </header>
 
     <main>
+      <!-- Hero: big cover image + title/lede/CTA
+           The image URL, title, lede, and CTA are loaded from content.json.hero
+           Elements targeted by script.js: #heroMedia, #heroTitle, #heroLede, #heroCta -->
       <section id="hero" class="hero">
         <div class="hero-media" id="heroMedia" style="--img:url('');"></div>
         <div class="container hero-copy">
@@ -35,26 +43,95 @@
         </div>
       </section>
 
+      <!-- Search and Filter Section -->
+      <section class="section alt">
+        <div class="container">
+          <div class="section-header">
+            <h2>Find Your Perfect Trip</h2>
+            <p class="lede">Filter destinations by trip type, duration, and style to discover your ideal European adventure.</p>
+          </div>
+          
+          <div class="filter-section">
+            <div class="filter-grid">
+              <div class="filter-group">
+                <label class="filter-label">Trip Duration</label>
+                <div class="filter-options">
+                  <button class="filter-btn" data-filter="duration" data-value="weekend">Weekend</button>
+                  <button class="filter-btn" data-filter="duration" data-value="week">1 Week</button>
+                  <button class="filter-btn" data-filter="duration" data-value="two-weeks">2 Weeks</button>
+                  <button class="filter-btn" data-filter="duration" data-value="month">1 Month+</button>
+                </div>
+              </div>
+              
+              <div class="filter-group">
+                <label class="filter-label">Trip Type</label>
+                <div class="filter-options">
+                  <button class="filter-btn" data-filter="type" data-value="romantic">Romantic</button>
+                  <button class="filter-btn" data-filter="type" data-value="family">Family</button>
+                  <button class="filter-btn" data-filter="type" data-value="girls-trip">Girls Trip</button>
+                  <button class="filter-btn" data-filter="type" data-value="solo">Solo</button>
+                  <button class="filter-btn" data-filter="type" data-value="adventure">Adventure</button>
+                </div>
+              </div>
+              
+              <div class="filter-group">
+                <label class="filter-label">Country</label>
+                <div class="filter-options">
+                  <button class="filter-btn" data-filter="country" data-value="france">France</button>
+                  <button class="filter-btn" data-filter="country" data-value="italy">Italy</button>
+                  <button class="filter-btn" data-filter="country" data-value="switzerland">Switzerland</button>
+                </div>
+              </div>
+              
+              <div class="filter-group">
+                <label class="filter-label">Experience</label>
+                <div class="filter-options">
+                  <button class="filter-btn" data-filter="experience" data-value="beach">Beach</button>
+                  <button class="filter-btn" data-filter="experience" data-value="mountains">Mountains</button>
+                  <button class="filter-btn" data-filter="experience" data-value="city">City</button>
+                  <button class="filter-btn" data-filter="experience" data-value="village">Village</button>
+                  <button class="filter-btn" data-filter="experience" data-value="culture">Culture</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="filter-actions">
+              <button class="btn btn-primary" id="applyFilters">Apply Filters</button>
+              <button class="btn btn-secondary" id="clearFilters">Clear All</button>
+            </div>
+            
+            <div class="filter-results">
+              <p id="filterCount">Showing all destinations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Destinations grid: cards are rendered from content.json.destinations into #destinationsGrid -->
       <section id="destinations" class="section">
         <div class="container">
           <div class="section-header">
             <h2>Destinations</h2>
             <a class="link" href="#journal">View all guides →</a>
           </div>
+          <!-- Script injects <article class="card"> items here -->
           <div class="grid cards" id="destinationsGrid"></div>
         </div>
       </section>
 
+      <!-- Journal posts: items are rendered from content.json.posts into #postsGrid -->
       <section id="journal" class="section alt">
         <div class="container">
           <div class="section-header">
             <h2>From the Journal</h2>
             <a class="link" href="#">All posts →</a>
           </div>
+          <!-- Script injects <article class="post"> items here -->
           <div class="grid posts" id="postsGrid"></div>
         </div>
       </section>
 
+      <!-- About: simple paragraph replaced from content.json.about.text -->
       <section id="about" class="section">
         <div class="container narrow">
           <h2>About</h2>
@@ -62,6 +139,7 @@
         </div>
       </section>
 
+      <!-- Newsletter: static demo form handled in script.js (no backend) -->
       <section id="newsletter" class="section">
         <div class="container narrow">
           <div class="newsletter">
@@ -76,6 +154,7 @@
       </section>
     </main>
 
+    <!-- Footer: year set by script.js; name replaced from content.json.site.name -->
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="year"></span> <span id="footerName">Drifted</span></p>
@@ -83,6 +162,10 @@
       </div>
     </footer>
 
+    <!-- script.js does:
+         - mobile nav toggle + smooth scrolling
+         - demo newsletter handler
+         - fetch("content.json") and render hero/destinations/posts/about + branding -->
     <script src="script.js" defer></script>
   </body>
   </html>

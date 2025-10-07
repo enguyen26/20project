@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lauterbrunnen — Drifted</title>
+    <meta name="description" content="A minimalist travel journal post for Lauterbrunnen." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>'>
+    <style>
+      .article-hero { height: clamp(280px, 30vw, 400px); background: center/cover no-repeat; background-image: var(--img); }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" id="siteLogo" href="/">Drifted</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html#destinations">Destinations</a>
+          <a href="index.html#journal">Journal</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#newsletter">Subscribe</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media article-hero" style="--img:url('images/lucern.jpg');"></div>
+        <div class="container hero-copy">
+          <a class="back-link" href="index.html#journal">← Back to Journal</a>
+          <h1 class="display">Lauterbrunnen</h1>
+          <p class="article-meta">Bernese Oberland • Switzerland • Updated <time>Sep 2025</time></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow article-body">
+          <div class="editable" contenteditable="true" aria-label="Intro paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit, arcu id pulvinar lobortis, justo lorem luctus arcu, vitae aliquet ligula mauris et urna. Phasellus vitae efficitur mi, ac vehicula lectus.
+          </div>
+
+          <h2>Gallery</h2>
+          <div class="photo-grid three-col">
+            <figure class="photo-item">
+              <img src="images/lucern.jpg" alt="Swiss valley view" />
+              <figcaption>Lauterbrunnen's valley of waterfalls</figcaption>
+            </figure>
+            <figure class="photo-item">
+              <img src="images/paris.jpg" alt="Paris cityscape" />
+              <figcaption>European beauty</figcaption>
+            </figure>
+            <figure class="photo-item">
+              <img src="images/marseille.jpg" alt="Marseille Vieux-Port" />
+              <figcaption>Historic ports</figcaption>
+            </figure>
+            <figure class="photo-item">
+              <img src="images/aix-en-provence.jpg" alt="Aix-en-Provence" />
+              <figcaption>Provence countryside</figcaption>
+            </figure>
+            <figure class="photo-item">
+              <img src="images/nice.png" alt="Nice coastline" />
+              <figcaption>French Riviera</figcaption>
+            </figure>
+          </div>
+
+          <h2>Where to Stay</h2>
+          <div class="grid-two">
+            <div class="editable" contenteditable="true" aria-label="Stay recommendation 1">
+              Curabitur non risus non sapien dictum sagittis. Mauris rhoncus, augue vitae viverra convallis, sapien orci efficitur mauris, at placerat orci risus id eros.
+            </div>
+            <div class="editable" contenteditable="true" aria-label="Stay recommendation 2">
+              Integer molestie, neque vitae volutpat posuere, neque nisl lacinia lorem, vel scelerisque lectus enim id velit. Suspendisse potenti.
+            </div>
+          </div>
+
+          <h2>Where to Eat</h2>
+          <div class="grid-two">
+            <div class="editable" contenteditable="true" aria-label="Eat recommendation 1">
+              Pellentesque ac ante nisi. Morbi in felis venenatis, facilisis risus in, porttitor nunc. Cras vestibulum at justo nec pharetra.
+            </div>
+            <div class="editable" contenteditable="true" aria-label="Eat recommendation 2">
+              Sed sodales, lorem et aliquet elementum, purus ipsum gravida leo, id molestie augue urna ut justo. Maecenas feugiat, velit vitae blandit hendrerit, nisl lacus posuere metus, vitae vehicula leo orci non nunc.
+            </div>
+          </div>
+
+          <h2>What to Do</h2>
+          <div class="editable" contenteditable="true" aria-label="Activities">
+            Nunc auctor diam et ipsum elementum, et pulvinar nibh euismod. Donec vel vestibulum purus. Praesent in sapien id urna tincidunt rutrum. Quisque pulvinar, velit id faucibus facilisis, lacus quam finibus risus, eu semper arcu libero eu lorem.
+          </div>
+
+          <h2>Sample Itinerary</h2>
+          <div class="editable" contenteditable="true" aria-label="Itinerary">
+            Day 1: Lorem ipsum dolor sit amet. Day 2: Vivamus hendrerit arcu id pulvinar. Day 3: Cras vestibulum at justo nec pharetra.
+          </div>
+
+          <h2>Tips</h2>
+          <div class="editable" contenteditable="true" aria-label="Tips">
+            Proin ut massa a justo mattis iaculis. Suspendisse ultricies, ipsum eget fermentum rutrum, nibh neque egestas justo, sit amet feugiat ipsum arcu sit amet urna.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> <span id="footerName">Drifted</span></p>
+        <a class="top-link" href="#" aria-label="Back to top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>

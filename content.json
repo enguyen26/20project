@@ -5,126 +5,199 @@
     "copyrightName": "Drifted"
   },
   "hero": {
-    "image": "images/cassis-port.jpg",
-    "title": "Port of Cassis",
-    "lede": "Turquoise calanques, pastel villas, and long seaside lunches.",
-    "ctaLabel": "Explore Destinations",
+    "image": "images/paris.jpg",
+    "title": "Curated European Adventures",
+    "lede": "Discover hidden gems, local favorites, and unforgettable experiences across France, Italy, and Switzerland. From charming villages to bustling cities, find your perfect escape.",
+    "ctaLabel": "Start Exploring",
     "ctaHref": "#destinations"
   },
   "destinations": [
     {
-      "title": "Port of Cassis, France",
+      "title": "Paris, France",
+      "meta": "City of Light • Museums, cafés, and Seine strolls",
+      "image": "images/paris.jpg",
+      "href": "paris.html",
+      "ariaLabel": "Paris, France"
+    },
+    {
+      "title": "Positano, Italy",
+      "meta": "Amalfi Coast • Cliffside village and beach clubs",
+      "image": "images/positano.jpg",
+      "href": "positano.html",
+      "ariaLabel": "Positano, Italy"
+    },
+    {
+      "title": "Capri, Italy",
+      "meta": "Amalfi Coast • Blue Grotto and island luxury",
+      "image": "images/capri.jpg",
+      "href": "capri.html",
+      "ariaLabel": "Capri, Italy"
+    },
+    {
+      "title": "Port de Cassis, France",
       "meta": "Côte d'Azur • Calanques, pastel villas, and seaside lunches",
       "image": "images/cassis-port.jpg",
-      "href": "#",
+      "href": "port-de-cassis.html",
       "ariaLabel": "Port of Cassis, France"
+    },
+    {
+      "title": "Nice, France",
+      "meta": "French Riviera • Promenade des Anglais and Old Town",
+      "image": "images/nice.png",
+      "href": "nice.html",
+      "ariaLabel": "Nice, France"
+    },
+    {
+      "title": "Monaco",
+      "meta": "Monte-Carlo • Port Hercule and cliffside glamour",
+      "image": "images/monaco.jpg",
+      "href": "monaco.html",
+      "ariaLabel": "Monaco"
     },
     {
       "title": "Marseille, France",
       "meta": "Vieux-Port • Bouillabaisse, Mucem, and street art in Le Panier",
       "image": "images/marseille.jpg",
-      "href": "#",
+      "href": "marseille.html",
       "ariaLabel": "Marseille, France"
-    },
-    {
-      "title": "Aix-en-Provence, France",
-      "meta": "Markets • Cours Mirabeau, fountains, and Cézanne's atelier",
-      "image": "images/aix-en-provence.jpg",
-      "href": "#",
-      "ariaLabel": "Aix-en-Provence, France"
-    },
-    {
-      "title": "Nice, France",
-      "meta": "Promenade des Anglais • Old Town alleys and beach clubs",
-      "image": "images/nice.jpg",
-      "href": "#",
-      "ariaLabel": "Nice, France"
     },
     {
       "title": "Èze Village, France",
       "meta": "Hilltop • Exotic garden views and stone lanes",
       "image": "images/eze.jpg",
-      "href": "#",
+      "href": "eze-village.html",
       "ariaLabel": "Èze Village, France"
     },
     {
-      "title": "Monaco",
-      "meta": "Monte-Carlo • Port Hercule and cliffside walks",
-      "image": "images/monaco.jpg",
-      "href": "#",
-      "ariaLabel": "Monaco"
+      "title": "Antibes, France",
+      "meta": "Côte d'Azur • Billionaire Bay and coastal charm",
+      "image": "images/antibes.jpg",
+      "href": "antibes.html",
+      "ariaLabel": "Antibes, France"
     },
     {
-      "title": "Beaulieu-sur-Mer, France",
-      "meta": "Belle Époque • Plage de la Petite Afrique and villa strolls",
-      "image": "images/beaulieu.jpg",
-      "href": "#",
-      "ariaLabel": "Beaulieu-sur-Mer, France"
+      "title": "Aix-en-Provence, France",
+      "meta": "Markets • Cours Mirabeau, fountains, and Cézanne's atelier",
+      "image": "images/aix-en-provence.jpg",
+      "href": "aix-en-provence.html",
+      "ariaLabel": "Aix-en-Provence, France"
     },
     {
-      "title": "Santorini, Greece",
-      "meta": "Island guide • Where to stay and best viewpoints",
-      "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1600&auto=format&fit=crop",
-      "href": "#",
-      "ariaLabel": "Santorini, Greece"
+      "title": "Moustiers Sainte Marie, France",
+      "meta": "Provence • Medieval village and pottery tradition",
+      "image": "images/moustiersaintemarie.jpg",
+      "href": "moustiers-sainte-marie.html",
+      "ariaLabel": "Moustiers Sainte Marie, France"
     },
     {
-      "title": "Kyoto, Japan",
-      "meta": "City guide • Temples, tea houses, hidden streets",
-      "image": "https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1600&auto=format&fit=crop",
-      "href": "#",
-      "ariaLabel": "Kyoto, Japan"
+      "title": "Zurich, Switzerland",
+      "meta": "Swiss Alps • Lake views and old town charm",
+      "image": "images/zurich.jpg",
+      "href": "zurich.html",
+      "ariaLabel": "Zurich, Switzerland"
     },
     {
-      "title": "Tulum, Mexico",
-      "meta": "Beach guide • Cenotes, cafes, and day trips",
-      "image": "https://images.unsplash.com/photo-1505764706515-aa95265c5abc?q=80&w=1600&auto=format&fit=crop",
-      "href": "#",
-      "ariaLabel": "Tulum, Mexico"
+      "title": "Grindelwald, Switzerland",
+      "meta": "Jungfrau Region • Alpine village and hiking base",
+      "image": "images/grindelwald.jpg",
+      "href": "grindelwald.html",
+      "ariaLabel": "Grindelwald, Switzerland"
+    },
+    {
+      "title": "Iseltwald, Switzerland",
+      "meta": "Bernese Oberland • Crystal lake and mountain backdrop",
+      "image": "images/iseltwald.jpg",
+      "href": "iseltwald.html",
+      "ariaLabel": "Iseltwald, Switzerland"
+    },
+    {
+      "title": "Jungfraujoch, Switzerland",
+      "meta": "Top of Europe • Highest railway station and glacier views",
+      "image": "images/lucern.jpg",
+      "href": "jungfraujoch.html",
+      "ariaLabel": "Jungfraujoch, Switzerland"
+    },
+    {
+      "title": "Lauterbrunnen, Switzerland",
+      "meta": "Valley of 72 Waterfalls • Swiss alpine paradise",
+      "image": "images/lucern.jpg",
+      "href": "lauterbrunnen.html",
+      "ariaLabel": "Lauterbrunnen, Switzerland"
+    },
+    {
+      "title": "Bürglen, Switzerland",
+      "meta": "Swiss Alps • Traditional village and mountain views",
+      "image": "images/burglen.jpg",
+      "href": "burglen.html",
+      "ariaLabel": "Bürglen, Switzerland"
     }
   ],
   "posts": [
     {
+      "title": "Port de Cassis Guide",
+      "excerpt": "Turquoise calanques, pastel villas, and long seaside lunches.",
+      "image": "images/cassis-port.jpg",
+      "href": "port-de-cassis.html"
+    },
+    {
       "title": "South of Provence: Marseille to Monaco",
       "excerpt": "First stop: Port of Cassis — turquoise calanques, stone coves, and a perfect seaside base for Aix, Nice, Èze, Monaco, and Beaulieu-sur-Mer.",
       "image": "images/cassis-port.jpg",
-      "href": "#"
+      "href": "port-de-cassis.html"
     },
     {
       "title": "Marseille Weekend Guide",
-      "excerpt": "Vieux-Port sunsets, Le Panier’s steps, and a bouillabaisse to remember.",
+      "excerpt": "Vieux-Port sunsets, Le Panier's steps, and a bouillabaisse to remember.",
       "image": "images/marseille.jpg",
-      "href": "#"
+      "href": "marseille.html"
     },
     {
       "title": "Aix-en-Provence in a Day",
-      "excerpt": "Markets on Cours Mirabeau, fountains, and Cézanne’s view of Sainte-Victoire.",
+      "excerpt": "Markets on Cours Mirabeau, fountains, and Cézanne's view of Sainte-Victoire.",
       "image": "images/aix-en-provence.jpg",
-      "href": "#"
-    },
-    {
-      "title": "Nice Old Town Stroll",
-      "excerpt": "Gelato lanes, pebble beaches, and sunrise on the Promenade.",
-      "image": "images/nice.jpg",
-      "href": "#"
+      "href": "aix-en-provence.html"
     },
     {
       "title": "Èze Village Lookouts",
       "excerpt": "A steep climb to exotic gardens and Riviera panoramas.",
       "image": "images/eze.jpg",
-      "href": "#"
+      "href": "eze-village.html"
     },
     {
       "title": "Monaco by Foot",
       "excerpt": "From the palace to Port Hercule — a compact loop of highlights.",
       "image": "images/monaco.jpg",
-      "href": "#"
+      "href": "monaco.html"
     },
     {
-      "title": "Beaulieu-sur-Mer Beach Day",
-      "excerpt": "Belle Époque villas and an easy swim at Petite Afrique.",
-      "image": "images/beaulieu.jpg",
-      "href": "#"
+      "title": "Paris City Guide",
+      "excerpt": "Museums, cafés, and Seine strolls in the City of Light.",
+      "image": "images/paris.jpg",
+      "href": "paris.html"
+    },
+    {
+      "title": "Swiss Alpine Adventure",
+      "excerpt": "From Zurich to Jungfraujoch — exploring Switzerland's mountain paradise.",
+      "image": "images/lucern.jpg",
+      "href": "zurich.html"
+    },
+    {
+      "title": "Antibes & Billionaire Bay",
+      "excerpt": "Luxury yachts, coastal walks, and the glamour of the French Riviera.",
+      "image": "images/antibes.jpg",
+      "href": "antibes.html"
+    },
+    {
+      "title": "Italian Coastal Dreams",
+      "excerpt": "From Capri's Blue Grotto to Positano's colorful cliffs — Amalfi Coast perfection.",
+      "image": "images/capri.jpg",
+      "href": "capri.html"
+    },
+    {
+      "title": "Nice Old Town Stroll",
+      "excerpt": "Gelato lanes, pebble beaches, and sunrise on the Promenade.",
+      "image": "images/nice.png",
+      "href": "nice.html"
     },
     {
       "title": "How we plan two-week trips",
