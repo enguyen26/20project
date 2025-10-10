@@ -36,7 +36,7 @@
     {
       "title": "Port de Cassis, France",
       "meta": "Côte d'Azur • Calanques, pastel villas, and seaside lunches",
-      "image": "images/cassis-port.jpg",
+      "image": "images/portdecassis.jpeg",
       "href": "port-de-cassis.html",
       "ariaLabel": "Port of Cassis, France"
     },
@@ -50,21 +50,21 @@
     {
       "title": "Monaco",
       "meta": "Monte-Carlo • Port Hercule and cliffside glamour",
-      "image": "images/monaco.jpg",
+      "image": "images/monaco.jpeg",
       "href": "monaco.html",
       "ariaLabel": "Monaco"
     },
     {
       "title": "Marseille, France",
       "meta": "Vieux-Port • Bouillabaisse, Mucem, and street art in Le Panier",
-      "image": "images/marseille.jpg",
+      "image": "images/marseille copy.jpg",
       "href": "marseille.html",
       "ariaLabel": "Marseille, France"
     },
     {
       "title": "Èze Village, France",
       "meta": "Hilltop • Exotic garden views and stone lanes",
-      "image": "images/eze.jpg",
+      "image": "images/ezevillage.jpg",
       "href": "eze-village.html",
       "ariaLabel": "Èze Village, France"
     },
@@ -78,7 +78,7 @@
     {
       "title": "Aix-en-Provence, France",
       "meta": "Markets • Cours Mirabeau, fountains, and Cézanne's atelier",
-      "image": "images/aix-en-provence.jpg",
+      "image": "images/aixenprovence.png",
       "href": "aix-en-provence.html",
       "ariaLabel": "Aix-en-Provence, France"
     },
@@ -136,37 +136,37 @@
     {
       "title": "Port de Cassis Guide",
       "excerpt": "Turquoise calanques, pastel villas, and long seaside lunches.",
-      "image": "images/cassis-port.jpg",
+      "image": "images/portdecassis.jpeg",
       "href": "port-de-cassis.html"
     },
     {
       "title": "South of Provence: Marseille to Monaco",
       "excerpt": "First stop: Port of Cassis — turquoise calanques, stone coves, and a perfect seaside base for Aix, Nice, Èze, Monaco, and Beaulieu-sur-Mer.",
-      "image": "images/cassis-port.jpg",
+      "image": "images/portdecassis.jpeg",
       "href": "port-de-cassis.html"
     },
     {
       "title": "Marseille Weekend Guide",
       "excerpt": "Vieux-Port sunsets, Le Panier's steps, and a bouillabaisse to remember.",
-      "image": "images/marseille.jpg",
+      "image": "images/marseille copy.jpg",
       "href": "marseille.html"
     },
     {
       "title": "Aix-en-Provence in a Day",
       "excerpt": "Markets on Cours Mirabeau, fountains, and Cézanne's view of Sainte-Victoire.",
-      "image": "images/aix-en-provence.jpg",
+      "image": "images/aixenprovence.png",
       "href": "aix-en-provence.html"
     },
     {
       "title": "Èze Village Lookouts",
       "excerpt": "A steep climb to exotic gardens and Riviera panoramas.",
-      "image": "images/eze.jpg",
+      "image": "images/ezevillage.jpg",
       "href": "eze-village.html"
     },
     {
       "title": "Monaco by Foot",
       "excerpt": "From the palace to Port Hercule — a compact loop of highlights.",
-      "image": "images/monaco.jpg",
+      "image": "images/monaco.jpeg",
       "href": "monaco.html"
     },
     {
