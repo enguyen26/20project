@@ -2,6 +2,16 @@
 
 A minimalist, image-forward travel blog showcasing curated European adventures across France, Italy, and Switzerland. Built with vanilla HTML, CSS, and JavaScript for fast loading and clean aesthetics.
 
+## 💭 Motivation
+
+This project was created for my coding class at Pomfret School. I wanted to build something that combined my interests in coding, travel, and photography.
+
+**Travel Memories**: I wanted a place to document and revisit my travel experiences instead of just having photos scattered across my phone.
+
+**Photography Portfolio**: I enjoy photography but didn't have a good platform to showcase my work. This website lets me share my travel photos in a way that feels more personal than social media.
+
+The result is a simple travel blog that serves as both a digital journal and a photography portfolio.
+
 ## 🌍 Live Site
 
 **https://enguyen26.github.io/20project**
