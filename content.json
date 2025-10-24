@@ -5,8 +5,8 @@
     "copyrightName": "Drifted"
   },
   "hero": {
-    "image": "images/paris.jpg",
-    "title": "Curated European Adventures",
+    "image": "images/coverphoto.jpeg",
+    "title": "",
     "lede": "Discover hidden gems, local favorites, and unforgettable experiences across France, Italy, and Switzerland. From charming villages to bustling cities, find your perfect escape.",
     "ctaLabel": "Start Exploring",
     "ctaHref": "#destinations"

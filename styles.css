@@ -47,10 +47,11 @@ body {
 
 /* Hero: big visual header with overlapping copy */
 .hero { position: relative; display: grid; }
-.hero-media { height: clamp(300px, 36vw, 520px); background: center/cover no-repeat; background-image: var(--img); }
-.hero-copy { position: relative; margin-top: -84px; }
+.hero-media { height: clamp(300px, 36vw, 520px); background: center 65%/cover no-repeat; background-image: var(--img); }
+.hero-copy { display: none; }
 .display { font-family: "Playfair Display", Georgia, serif; font-weight: 600; font-size: clamp(2rem, 1.6rem + 3vw, 3.2rem); margin: 0; letter-spacing: 0.2px; }
-.lede { margin: 0.6rem 0 1.2rem; color: var(--muted); max-width: 60ch; }
+.hero-copy .display { color: #ffffff; font-size: clamp(1.6rem, 1.4rem + 2vw, 2.4rem); }
+.lede { margin: 0.3rem 0 1.2rem; color: var(--muted); max-width: 60ch; }
 
 /* Sections: spacing + an alternate muted background band */
 .section { padding: 2rem 0; }
