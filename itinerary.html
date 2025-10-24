@@ -46,10 +46,36 @@
             </div>
             <div class="trip-actions">
               <button class="btn btn-primary" id="saveTrip">Save Trip</button>
+              <button class="btn btn-primary" id="exportCalendar">📅 Export to Calendar</button>
               <button class="btn btn-secondary" id="clearTrip">Clear All</button>
             </div>
           </div>
           <div class="save-status" id="saveStatus"></div>
+        </div>
+      </section>
+
+      <!-- Budget Summary -->
+      <section class="section">
+        <div class="container">
+          <div class="budget-summary">
+            <h2>Budget Summary</h2>
+            <div class="budget-display">
+              <div class="budget-item">
+                <span class="budget-label">Total Estimated Cost:</span>
+                <span class="budget-value" id="totalBudget">$0</span>
+              </div>
+              <div class="budget-item">
+                <span class="budget-label">Activities:</span>
+                <span class="budget-value" id="activitiesBudget">$0</span>
+              </div>
+              <div class="budget-item">
+                <span class="budget-label">Hotels:</span>
+                <span class="budget-value" id="hotelsBudget">$0</span>
+              </div>
+            </div>
+            <button class="btn btn-secondary" id="findHotels">🏨 Find Affordable Hotels</button>
+            <button class="btn btn-secondary" id="findActivities">🎯 Find Budget Activities</button>
+          </div>
         </div>
       </section>
 
@@ -58,7 +84,10 @@
         <div class="container">
           <div class="timeline-header">
             <h2>Your Itinerary</h2>
-            <button class="btn btn-primary" id="addDay">+ Add Day</button>
+            <div class="timeline-actions">
+              <button class="btn btn-secondary" id="useTemplate">✨ Use Template</button>
+              <button class="btn btn-primary" id="addDay">+ Add Day</button>
+            </div>
           </div>
           
           <div class="timeline" id="timeline">
@@ -92,6 +121,26 @@
             </div>
             
             <div class="form-group">
+              <label for="activityCategory">Category</label>
+              <select id="activityCategory">
+                <option value="">Select category...</option>
+                <option value="sightseeing">🏛️ Sightseeing</option>
+                <option value="food">🍽️ Food & Dining</option>
+                <option value="culture">🎨 Culture & Arts</option>
+                <option value="relaxation">🏖️ Relaxation</option>
+                <option value="shopping">🛍️ Shopping</option>
+                <option value="nightlife">🌙 Nightlife</option>
+                <option value="adventure">🏔️ Adventure</option>
+                <option value="hotel">🏨 Accommodation</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="activityCost">Estimated Cost ($)</label>
+              <input type="number" id="activityCost" placeholder="0" min="0" step="0.01">
+            </div>
+            
+            <div class="form-group">
               <label for="activityNotes">Notes</label>
               <textarea id="activityNotes" rows="4" placeholder="Any additional details or tips..."></textarea>
             </div>
@@ -101,6 +150,38 @@
               <button type="button" class="btn btn-secondary" id="cancelActivity">Cancel</button>
             </div>
           </form>
+        </div>
+      </div>
+
+      <!-- Template Modal -->
+      <div class="modal" id="templateModal">
+        <div class="modal-content modal-large">
+          <span class="modal-close">&times;</span>
+          <h2>✨ Use Activity Template</h2>
+          <p>Select a destination to get suggested activities</p>
+          <div class="template-grid" id="templateGrid">
+            <!-- Templates will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Hotel Finder Modal -->
+      <div class="modal" id="hotelModal">
+        <div class="modal-content modal-large">
+          <span class="modal-close">&times;</span>
+          <h2>🏨 Find Affordable Hotels</h2>
+          <div class="search-filters">
+            <input type="text" id="hotelSearch" placeholder="Search destination..." class="search-input">
+            <select id="budgetRange">
+              <option value="budget">💰 Budget ($50-100/night)</option>
+              <option value="mid">💵 Mid-range ($100-200/night)</option>
+              <option value="luxury">💎 Luxury ($200+/night)</option>
+            </select>
+            <button class="btn btn-primary" id="searchHotels">Search</button>
+          </div>
+          <div class="results-container" id="hotelResults">
+            <p class="helper-text">Enter a destination and budget range to find hotels</p>
+          </div>
         </div>
       </div>
     </main>
