@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel Itinerary Planner — Drifted</title>
+    <meta name="description" content="Plan your perfect trip with our interactive itinerary planner" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Drifted</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html#destinations">Destinations</a>
+          <a href="index.html#journal">Journal</a>
+          <a href="index.html#about">About</a>
+          <a href="itinerary.html">Plan Trip</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero itinerary-hero">
+        <div class="container hero-copy">
+          <h1 class="display">Plan Your Perfect Trip</h1>
+          <p class="lede">Create a custom itinerary with day-by-day activities, discover amazing destinations, and never forget an experience.</p>
+        </div>
+      </section>
+
+      <!-- Trip Details Section -->
+      <section class="section">
+        <div class="container">
+          <div class="trip-header">
+            <div class="trip-details-editable">
+              <input type="text" id="tripName" class="trip-name-input" placeholder="Enter trip name..." value="My Dream Trip">
+              <input type="text" id="tripDates" class="trip-dates-input" placeholder="e.g., June 15-22, 2024" value="">
+              <input type="text" id="tripDestination" class="trip-destination-input" placeholder="Destination..." value="">
+            </div>
+            <div class="trip-actions">
+              <button class="btn btn-primary" id="saveTrip">Save Trip</button>
+              <button class="btn btn-secondary" id="clearTrip">Clear All</button>
+            </div>
+          </div>
+          <div class="save-status" id="saveStatus"></div>
+        </div>
+      </section>
+
+      <!-- Timeline View -->
+      <section class="section alt">
+        <div class="container">
+          <div class="timeline-header">
+            <h2>Your Itinerary</h2>
+            <button class="btn btn-primary" id="addDay">+ Add Day</button>
+          </div>
+          
+          <div class="timeline" id="timeline">
+            <!-- Days will be dynamically inserted here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Activity Modal -->
+      <div class="modal" id="activityModal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <h2 id="modalTitle">Add Activity</h2>
+          <form id="activityForm">
+            <input type="hidden" id="activityId">
+            <input type="hidden" id="activityDayId">
+            
+            <div class="form-group">
+              <label for="activityTitle">Activity Title</label>
+              <input type="text" id="activityTitle" placeholder="e.g., Visit Eiffel Tower" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="activityTime">Time</label>
+              <input type="text" id="activityTime" placeholder="e.g., 10:00 AM">
+            </div>
+            
+            <div class="form-group">
+              <label for="activityLocation">Location</label>
+              <input type="text" id="activityLocation" placeholder="e.g., Champs de Mars, Paris">
+            </div>
+            
+            <div class="form-group">
+              <label for="activityNotes">Notes</label>
+              <textarea id="activityNotes" rows="4" placeholder="Any additional details or tips..."></textarea>
+            </div>
+            
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Save Activity</button>
+              <button type="button" class="btn btn-secondary" id="cancelActivity">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Drifted</p>
+        <a class="top-link" href="#hero" aria-label="Back to top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="itinerary.js" defer></script>
+  </body>
+</html>
+
