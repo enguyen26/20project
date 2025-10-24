@@ -14,7 +14,7 @@ The result is a simple travel blog that serves as both a digital journal and a p
 
 ## 🌍 Live Site
 
-**https://enguyen26.github.io/20project**
+**[https://enguyen26.github.io/20project](https://enguyen26.github.io/20project/)**
 
 ## ✨ Features
 
