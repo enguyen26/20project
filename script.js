@@ -110,7 +110,7 @@
     .then((data) => {
       // Site branding
       if (data.site?.name) {
-        if (siteLogo) siteLogo.textContent = data.site.name;
+        if (siteLogo) siteLogo.innerHTML = `${data.site.name}<span class="byline">by Elina Nguyen</span>`;
         if (footerName) footerName.textContent = data.site.name;
         document.title = `${data.site.name} — Travel Guides & Journal`;
       }
