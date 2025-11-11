@@ -3,27 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Iseltwald — Drifted</title>
-    <meta name="description" content="A minimalist travel journal post for Iseltwald." />
+    <title>Iseltwald Travel Guide — Drifted</title>
+    <meta name="description" content="A guide to Iseltwald: the tiny lakeside village made famous by Korean drama Crash Landing on You." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Fonts: Crimson Text for body, Montserrat for headings - Find Us Lost style -->
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>'>
-    <style>
-      .article-hero { height: clamp(280px, 30vw, 400px); background: center/cover no-repeat; background-image: var(--img); }
-    </style>
+    <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>">
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" id="siteLogo" href="/">Drifted</a>
+        <a class="logo" href="index.html">Drifted</a>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <nav class="site-nav" aria-label="Main navigation">
           <a href="index.html#destinations">Destinations</a>
           <a href="index.html#journal">Journal</a>
           <a href="index.html#about">About</a>
+          <a href="itinerary.html">Plan Trip</a>
           <a href="index.html#newsletter">Subscribe</a>
         </nav>
       </div>
@@ -31,93 +29,86 @@
 
     <main>
       <section class="hero">
-        <div class="hero-media article-hero" style="--img:url('images/coverphotoandiseltwald .jpeg');"></div>
-        <div class="container hero-copy">
-          <a class="back-link" href="index.html#journal">← Back to Journal</a>
-          <h1 class="display">Iseltwald</h1>
-          <p class="article-meta">Bernese Oberland • Switzerland • Updated <time>Sep 2025</time></p>
-        </div>
+        <div class="hero-media" style="--img:url('images/iseltwald.jpg'); height: clamp(400px, 50vw, 600px);"></div>
       </section>
 
       <section class="section">
         <div class="container narrow article-body">
-          <div class="editable" contenteditable="true" aria-label="Intro paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit, arcu id pulvinar lobortis, justo lorem luctus arcu, vitae aliquet ligula mauris et urna. Phasellus vitae efficitur mi, ac vehicula lectus.
-          </div>
+          <a class="back-link" href="index.html#destinations">← Back to Destinations</a>
 
-          <h2>Gallery</h2>
-          <div class="photo-grid three-col">
+          <h1 class="display" style="margin-top: 2rem;">Iseltwald Travel Guide</h1>
+          <p class="article-meta">Iseltwald, Bernese Oberland, Switzerland • Updated January 2025</p>
+
+          <p>Iseltwald is a tiny village on the southern shore of Lake Brienz that became Instagram-famous after appearing in the Netflix K-drama "Crash Landing on You." Before 2020, it was a quiet lakeside hamlet with a few dozen residents. Now it's overrun with tourists—mostly Korean drama fans—who come for selfies at the iconic pier and then leave. It's beautiful, yes, but it's also a one-hour-max visit unless you're staying overnight.</p>
+
+          <p>The reality: Iseltwald has one famous pier, one hotel (the Strand Hotel where the drama was filmed), a handful of houses, and stunning views across the turquoise waters of Lake Brienz to the mountains beyond. That's it. There's no town center, no restaurants worth mentioning, and very little to do beyond taking photos. It's picturesque in the extreme, but the fame has turned it into a photo stop rather than a destination.</p>
+
+          <h2>What to Know Before You Go</h2>
+
+          <p><strong>It's very touristy now:</strong> The village didn't ask for this fame, and locals are somewhat overwhelmed by the constant stream of visitors. You'll see signs asking tourists to be respectful, keep quiet, and not trespass on private property. The pier itself gets crowded, especially during peak season when tour buses arrive. Early morning or late afternoon offers the best chance for photos without crowds.</p>
+
+          <p><strong>There's not much to do:</strong> You can walk to the pier, take photos, walk along the lake for 10-15 minutes, and that's about it. The village is tiny—maybe 400 meters from end to end. Unless you're a hardcore K-drama fan making a pilgrimage, one hour is plenty.</p>
+
+          <p><strong>Combine it with other stops:</strong> Iseltwald works best as a quick detour on your way between Interlaken and Brienz, or as part of a Lake Brienz cruise. Don't make it the centerpiece of your day—you'll be disappointed.</p>
+
+          <div class="photo-grid two-col" style="margin: 2.5rem 0;">
             <figure class="photo-item">
-              <img src="images/coverphotoandiseltwald .jpeg" alt="Swiss mountains and lake" />
-              <figcaption>Aerial view of Swiss mountains and lake</figcaption>
+              <img src="images/iseltwald.jpg" alt="The famous Iseltwald pier on Lake Brienz" />
             </figure>
             <figure class="photo-item">
-              <img src="images/iseltwald.jpg" alt="Iseltwald lake village" />
-              <figcaption>Iseltwald's crystal clear lake</figcaption>
-            </figure>
-            <figure class="photo-item">
-              <img src="images/lucern.jpg" alt="Swiss lake view" />
-              <figcaption>Swiss lake beauty</figcaption>
-            </figure>
-            <figure class="photo-item">
-              <img src="images/paris.jpg" alt="Paris cityscape" />
-              <figcaption>European charm</figcaption>
-            </figure>
-            <figure class="photo-item">
-              <img src="images/marseille.jpg" alt="Marseille Vieux-Port" />
-              <figcaption>Historic ports</figcaption>
-            </figure>
-            <figure class="photo-item">
-              <img src="images/aix-en-provence.jpg" alt="Aix-en-Provence" />
-              <figcaption>Provence countryside</figcaption>
+              <img src="images/lucern.jpg" alt="Swiss lake scenery" />
             </figure>
           </div>
 
-          <h2>Where to Stay</h2>
-          <div class="grid-two">
-            <div class="editable" contenteditable="true" aria-label="Stay recommendation 1">
-              Curabitur non risus non sapien dictum sagittis. Mauris rhoncus, augue vitae viverra convallis, sapien orci efficitur mauris, at placerat orci risus id eros.
-            </div>
-            <div class="editable" contenteditable="true" aria-label="Stay recommendation 2">
-              Integer molestie, neque vitae volutpat posuere, neque nisl lacinia lorem, vel scelerisque lectus enim id velit. Suspendisse potenti.
-            </div>
-          </div>
+          <h2>Getting There</h2>
+
+          <p>Iseltwald is about 15 minutes from Interlaken by car, or 30-40 minutes by bus (route 103 from Interlaken Ost to Iseltwald). The bus runs hourly, and the village has limited parking (which fills up fast in summer). If you're driving, arrive early or late to find parking spots near the lake.</p>
+
+          <p>Alternatively, take a boat from Interlaken or Brienz across Lake Brienz—the journey itself is scenic, and you'll arrive directly at the lakefront. Boat schedules are seasonal; check Swiss boat timetables online.</p>
+
+          <h2>What to Do (It's a Short List)</h2>
+
+          <p><strong>The Pier:</strong> This is the spot. The wooden pier extending into the crystal-clear turquoise water, with mountains in the background. It's as photogenic as the Instagram posts suggest. Expect to wait your turn for photos during busy periods. Be respectful—locals actually live here and are tired of tourists treating their home like a theme park.</p>
+
+          <p><strong>Walk along the lake:</strong> A short path follows the shoreline with benches overlooking the water. It's peaceful if you can ignore the selfie-taking crowds. The lake color is genuinely stunning—a milky turquoise from glacial silt.</p>
+
+          <p><strong>Strand Hotel:</strong> The hotel from the drama allows visitors in the lobby and has a lakeside terrace where you can get drinks or a meal (expensive, as you'd expect). If you're a fan, this is your spot. If not, it's just an expensive hotel on a pretty lake.</p>
+
+          <p><strong>Harder Kulm viewpoint:</strong> Not in Iseltwald itself, but nearby in Interlaken. If you're in the area, the Harder Kulm funicular offers panoramic views over both Lake Brienz and Lake Thun. Worth it if you have extra time.</p>
 
           <h2>Where to Eat</h2>
-          <div class="grid-two">
-            <div class="editable" contenteditable="true" aria-label="Eat recommendation 1">
-              Pellentesque ac ante nisi. Morbi in felis venenatis, facilisis risus in, porttitor nunc. Cras vestibulum at justo nec pharetra.
-            </div>
-            <div class="editable" contenteditable="true" aria-label="Eat recommendation 2">
-              Sed sodales, lorem et aliquet elementum, purus ipsum gravida leo, id molestie augue urna ut justo. Maecenas feugiat, velit vitae blandit hendrerit, nisl lacus posuere metus, vitae vehicula leo orci non nunc.
-            </div>
-          </div>
 
-          <h2>What to Do</h2>
-          <div class="editable" contenteditable="true" aria-label="Activities">
-            Nunc auctor diam et ipsum elementum, et pulvinar nibh euismod. Donec vel vestibulum purus. Praesent in sapien id urna tincidunt rutrum. Quisque pulvinar, velit id faucibus facilisis, lacus quam finibus risus, eu semper arcu libero eu lorem.
-          </div>
+          <p>Options are extremely limited. The Strand Hotel has a restaurant (expensive, CHF 30-50 for mains), and there's a small snack kiosk near the pier that's open seasonally. Your best bet is to eat in Interlaken or Brienz and treat Iseltwald as a quick photo stop, not a meal destination.</p>
 
-          <h2>Sample Itinerary</h2>
-          <div class="editable" contenteditable="true" aria-label="Itinerary">
-            Day 1: Lorem ipsum dolor sit amet. Day 2: Vivamus hendrerit arcu id pulvinar. Day 3: Cras vestibulum at justo nec pharetra.
-          </div>
+          <h2>Practical Tips</h2>
 
-          <h2>Tips</h2>
-          <div class="editable" contenteditable="true" aria-label="Tips">
-            Proin ut massa a justo mattis iaculis. Suspendisse ultricies, ipsum eget fermentum rutrum, nibh neque egestas justo, sit amet feugiat ipsum arcu sit amet urna.
-          </div>
+          <p><strong>Timing:</strong> Go at sunrise or sunset for the best light and fewer crowds. Midday in summer sees tour buses and large groups—the pier becomes a queue. Weekdays are better than weekends. Avoid July-August if possible, when Korean tour groups arrive in large numbers.</p>
+
+          <p><strong>Respect the locals:</strong> This is a real village where people live year-round. Don't trespass on private property, keep noise down, and don't block driveways or entrances for photos. The residents didn't choose to become a tourist attraction and are understandably frustrated with the disruption.</p>
+
+          <p><strong>Be realistic about expectations:</strong> If you've seen photos online, you've basically seen Iseltwald. It's beautiful but small. Don't build your entire Switzerland itinerary around this one spot. It's a nice 30-minute detour, not a destination.</p>
+
+          <p><strong>Weather matters:</strong> The lake color and mountain views are best on sunny days. Overcast weather turns the water gray and obscures the peaks—the photo magic disappears. Check the forecast before making the trip.</p>
+
+          <p><strong>If you're not a K-drama fan:</strong> Honestly, skip it unless it's directly on your route. The village is pretty, but Switzerland has hundreds of equally beautiful lakeside spots without the tourist crowds. Brienz, just 15 minutes away, offers similar scenery with better infrastructure and less hype.</p>
+
+          <h2>The Verdict</h2>
+
+          <p>Iseltwald is beautiful but overhyped. The K-drama brought it worldwide fame, but that fame has changed the village—it's now a selfie stop rather than a peaceful lakeside retreat. If you're a "Crash Landing on You" fan, it's a pilgrimage worth making. If you're not, spend your time in Brienz, Lauterbrunnen, or one of the region's many other stunning locations that haven't been Instagram-ified into oblivion.</p>
+
+          <p>Visit for 30-60 minutes, take your photos, appreciate the scenery, and move on. Don't expect more than that and you won't be disappointed. And please, be respectful to the locals who have had their quiet village turned into a tourist attraction overnight.</p>
+
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© <span id="year"></span> <span id="footerName">Drifted</span></p>
+        <p>© <span id="year">2025</span> Drifted</p>
         <a class="top-link" href="#" aria-label="Back to top">Back to top ↑</a>
       </div>
     </footer>
 
     <script src="script.js" defer></script>
   </body>
-  </html>
+</html>

@@ -3,27 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bürglen — Drifted</title>
-    <meta name="description" content="A minimalist travel journal post for Bürglen." />
+    <title>Bürglen Travel Guide — Drifted</title>
+    <meta name="description" content="A guide to Bürglen: the legendary birthplace of William Tell in Uri canton." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Fonts: Crimson Text for body, Montserrat for headings - Find Us Lost style -->
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>'>
-    <style>
-      .article-hero { height: clamp(280px, 30vw, 400px); background: center/cover no-repeat; background-image: var(--img); }
-    </style>
+    <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>">
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" id="siteLogo" href="/">Drifted</a>
+        <a class="logo" href="index.html">Drifted</a>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <nav class="site-nav" aria-label="Main navigation">
           <a href="index.html#destinations">Destinations</a>
           <a href="index.html#journal">Journal</a>
           <a href="index.html#about">About</a>
+          <a href="itinerary.html">Plan Trip</a>
           <a href="index.html#newsletter">Subscribe</a>
         </nav>
       </div>
@@ -31,89 +29,100 @@
 
     <main>
       <section class="hero">
-        <div class="hero-media article-hero" style="--img:url('images/burglen.jpg');"></div>
-        <div class="container hero-copy">
-          <a class="back-link" href="index.html#journal">← Back to Journal</a>
-          <h1 class="display">Bürglen</h1>
-          <p class="article-meta">Switzerland • Updated <time>Sep 2025</time></p>
-        </div>
+        <div class="hero-media" style="--img:url('images/burglen.jpg'); height: clamp(400px, 50vw, 600px);"></div>
       </section>
 
       <section class="section">
         <div class="container narrow article-body">
-          <div class="editable" contenteditable="true" aria-label="Intro paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit, arcu id pulvinar lobortis, justo lorem luctus arcu, vitae aliquet ligula mauris et urna. Phasellus vitae efficitur mi, ac vehicula lectus.
-          </div>
+          <a class="back-link" href="index.html#destinations">← Back to Destinations</a>
 
-          <h2>Gallery</h2>
-          <div class="photo-grid three-col">
+          <h1 class="display" style="margin-top: 2rem;">Bürglen Travel Guide</h1>
+          <p class="article-meta">Bürglen, Uri, Switzerland • Updated January 2025</p>
+
+          <p>Bürglen is a small village in the canton of Uri, known primarily as the legendary birthplace of William Tell—Switzerland's national hero who may or may not have actually existed. It's quiet, traditional, and very much off the tourist trail. Unless you're a Swiss history enthusiast or passing through on your way between Lucerne and the mountain passes, there's not much reason to make a special trip here. But if you want to see authentic Swiss village life without the crowds, this is it.</p>
+
+          <p>The village sits in a valley surrounded by mountains, about 15 minutes from Altdorf (the larger town where the famous William Tell statue stands). It's picturesque in an understated way—traditional Swiss houses, a pretty church, agricultural land, and mountain views. There are no Instagram hotspots, no luxury hotels, no tour buses. It's Switzerland as it actually is, not as the tourism board sells it.</p>
+
+          <h2>The William Tell Connection</h2>
+
+          <p>William Tell is Switzerland's legendary folk hero—the crossbow-wielding rebel who shot an apple off his son's head and sparked the rebellion against Austrian rule in the 14th century. The problem? He probably didn't exist. Most historians consider him a myth, a symbol of Swiss independence rather than a real person. But Switzerland loves the legend anyway, and Bürglen claims him as a native son.</p>
+
+          <p><strong>Tell Museum:</strong> The village's main attraction is the small museum dedicated to William Tell, housed in a medieval tower. It covers the legend, the historical context, and Tell's role in Swiss national identity. If you're interested in Swiss culture and folklore, it's worth an hour. If you're not, it's skippable. Entry is around CHF 7.</p>
+
+          <p>The museum is small and very local—don't expect English translations for everything. But the building itself is charming, and the exhibit provides context for why Tell matters so much to Swiss identity, even if he's likely fictional.</p>
+
+          <div class="photo-grid two-col" style="margin: 2.5rem 0;">
             <figure class="photo-item">
-              <img src="images/burglen.jpg" alt="Bürglen Swiss village" />
-              <figcaption>Bürglen's traditional Swiss charm</figcaption>
+              <img src="images/burglen.jpg" alt="Traditional Swiss village of Bürglen" />
             </figure>
             <figure class="photo-item">
-              <img src="images/grindelwald.jpg" alt="Grindelwald mountains" />
-              <figcaption>Nearby Grindelwald</figcaption>
-            </figure>
-            <figure class="photo-item">
-              <img src="images/iseltwald.jpg" alt="Iseltwald lake" />
-              <figcaption>Iseltwald lake views</figcaption>
-            </figure>
-            <figure class="photo-item">
-              <img src="images/lucern.jpg" alt="Lucerne lake" />
-              <figcaption>Swiss lake beauty</figcaption>
-            </figure>
-            <figure class="photo-item">
-              <img src="images/zurich.jpg" alt="Zurich city" />
-              <figcaption>Zurich cityscape</figcaption>
+              <img src="images/lucern.jpg" alt="Swiss countryside views" />
             </figure>
           </div>
 
-          <h2>Where to Stay</h2>
-          <div class="grid-two">
-            <div class="editable" contenteditable="true" aria-label="Stay recommendation 1">
-              Curabitur non risus non sapien dictum sagittis. Mauris rhoncus, augue vitae viverra convallis, sapien orci efficitur mauris, at placerat orci risus id eros.
-            </div>
-            <div class="editable" contenteditable="true" aria-label="Stay recommendation 2">
-              Integer molestie, neque vitae volutpat posuere, neque nisl lacinia lorem, vel scelerisque lectus enim id velit. Suspendisse potenti.
-            </div>
-          </div>
+          <h2>What Else to Do (Not Much)</h2>
 
-          <h2>Where to Eat</h2>
-          <div class="grid-two">
-            <div class="editable" contenteditable="true" aria-label="Eat recommendation 1">
-              Pellentesque ac ante nisi. Morbi in felis venenatis, facilisis risus in, porttitor nunc. Cras vestibulum at justo nec pharetra.
-            </div>
-            <div class="editable" contenteditable="true" aria-label="Eat recommendation 2">
-              Sed sodales, lorem et aliquet elementum, purus ipsum gravida leo, id molestie augue urna ut justo. Maecenas feugiat, velit vitae blandit hendrerit, nisl lacus posuere metus, vitae vehicula leo orci non nunc.
-            </div>
-          </div>
+          <p><strong>Walk around the village:</strong> Bürglen is tiny—you can see the whole thing in 20 minutes. The church (St. Martin's) is pretty, the village center has traditional architecture, and there are nice mountain views. It's peaceful and authentic, but there's no specific "attraction" beyond the general atmosphere.</p>
 
-          <h2>What to Do</h2>
-          <div class="editable" contenteditable="true" aria-label="Activities">
-            Nunc auctor diam et ipsum elementum, et pulvinar nibh euismod. Donec vel vestibulum purus. Praesent in sapien id urna tincidunt rutrum. Quisque pulvinar, velit id faucibus facilisis, lacus quam finibus risus, eu semper arcu libero eu lorem.
-          </div>
+          <p><strong>Drive or cycle to nearby villages:</strong> The Uri region has several small traditional villages connected by scenic roads. If you have a car or bike, exploring the valley is pleasant—rolling hills, farms, mountain backdrops. It's not dramatic like the Bernese Oberland, but it's genuinely Swiss rural life.</p>
 
-          <h2>Sample Itinerary</h2>
-          <div class="editable" contenteditable="true" aria-label="Itinerary">
-            Day 1: Lorem ipsum dolor sit amet. Day 2: Vivamus hendrerit arcu id pulvinar. Day 3: Cras vestibulum at justo nec pharetra.
-          </div>
+          <p><strong>Altdorf:</strong> The larger town 15 minutes away has the famous William Tell statue and monument in the main square. If you're in Bürglen, you might as well see this too. Altdorf also has more restaurants and shops, making it a better base if you need services.</p>
 
-          <h2>Tips</h2>
-          <div class="editable" contenteditable="true" aria-label="Tips">
-            Proin ut massa a justo mattis iaculis. Suspendisse ultricies, ipsum eget fermentum rutrum, nibh neque egestas justo, sit amet feugiat ipsum arcu sit amet urna.
-          </div>
+          <h2>Who Should Visit</h2>
+
+          <p>Bürglen is for a very specific type of traveler. You should visit if:</p>
+
+          <ul style="line-height: 2;">
+            <li>You're interested in Swiss history and folklore</li>
+            <li>You want to see traditional village life without tourist crowds</li>
+            <li>You're driving between Lucerne and the Gotthard Pass or Andermatt</li>
+            <li>You specifically want to visit the Tell Museum</li>
+            <li>You prefer quiet, authentic experiences over iconic sights</li>
+          </ul>
+
+          <p>Skip it if you're on a tight schedule, want dramatic scenery, or need tourist infrastructure. This isn't Grindelwald or Lauterbrunnen—it's a sleepy village with limited accommodation and dining options.</p>
+
+          <h2>Getting There</h2>
+
+          <p>Bürglen is about 45 minutes from Lucerne by car, or accessible by train via Altdorf. The train from Lucerne to Altdorf takes about 50 minutes, then it's a short bus ride or 15-minute walk to Bürglen. Most visitors arrive by car as they're passing through the region.</p>
+
+          <p>If you're driving the Gotthard Pass route (one of Switzerland's most scenic mountain roads), Bürglen makes a reasonable stopover. Otherwise, it's out of the way from major tourist routes.</p>
+
+          <h2>Where to Stay and Eat</h2>
+
+          <p>Accommodation in Bürglen is very limited—a few guesthouses and B&Bs aimed at locals, not international tourists. English may be limited. If you're staying in the area, Altdorf offers more options and better facilities.</p>
+
+          <p>For eating, there are one or two local restaurants serving traditional Swiss food. Don't expect menus in English or vegetarian options beyond cheese dishes. This is a rural Swiss village where fondue, rösti, and sausages dominate. Meals will cost CHF 20-35, cheaper than tourist areas but still Swiss prices.</p>
+
+          <h2>Practical Tips</h2>
+
+          <p><strong>Language:</strong> German (Swiss German dialect specifically) is spoken here. English is less common than in tourist areas like Zurich or Interlaken. Basic German phrases help.</p>
+
+          <p><strong>Don't expect tourist infrastructure:</strong> This isn't a tourist village. There are no souvenir shops, no luxury hotels, no tour operators. Bring cash—some places may not accept cards. Open hours can be unpredictable.</p>
+
+          <p><strong>Best as a stopover:</strong> Bürglen works well as a 1-2 hour stop on a larger itinerary. Visit the Tell Museum, walk around, grab lunch in Altdorf, and continue to your next destination. Making it a dedicated day trip from Lucerne or elsewhere feels like overkill unless you're a serious William Tell enthusiast.</p>
+
+          <p><strong>Visit nearby Altdorf too:</strong> The two towns are closely linked. Altdorf has the Tell monument, a historic town center, and better facilities. Combine both in a half-day visit for the full William Tell experience.</p>
+
+          <p><strong>Timing:</strong> The Tell Museum has limited opening hours—check ahead before visiting. The village itself is accessible year-round, but there's even less going on outside summer months (June-September).</p>
+
+          <h2>The Verdict</h2>
+
+          <p>Bürglen is Switzerland's quiet side—a working village where people actually live, farm, and go about their lives without catering to tourists. It's refreshing in that sense, but also means there's very little to "do" in the conventional tourism sense. The William Tell Museum is the only real attraction, and even that's fairly niche.</p>
+
+          <p>Visit if you're passing through, curious about Swiss folklore, or want to escape tourist Switzerland for an hour. Skip it if you're short on time or prefer dramatic alpine scenery and tourist amenities. This is authentic Switzerland, which turns out to be quiet, rural, and not particularly exciting—but sometimes that's exactly what you need.</p>
+
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© <span id="year"></span> <span id="footerName">Drifted</span></p>
+        <p>© <span id="year">2025</span> Drifted</p>
         <a class="top-link" href="#" aria-label="Back to top">Back to top ↑</a>
       </div>
     </footer>
 
     <script src="script.js" defer></script>
   </body>
-  </html>
+</html>

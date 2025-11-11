@@ -3,27 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lauterbrunnen — Drifted</title>
-    <meta name="description" content="A minimalist travel journal post for Lauterbrunnen." />
+    <title>Lauterbrunnen Travel Guide — Drifted</title>
+    <meta name="description" content="A guide to Lauterbrunnen: the valley of 72 waterfalls and the quieter alternative to Grindelwald." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Fonts: Crimson Text for body, Montserrat for headings - Find Us Lost style -->
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>'>
-    <style>
-      .article-hero { height: clamp(280px, 30vw, 400px); background: center/cover no-repeat; background-image: var(--img); }
-    </style>
+    <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>">
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" id="siteLogo" href="/">Drifted</a>
+        <a class="logo" href="index.html">Drifted</a>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <nav class="site-nav" aria-label="Main navigation">
           <a href="index.html#destinations">Destinations</a>
           <a href="index.html#journal">Journal</a>
           <a href="index.html#about">About</a>
+          <a href="itinerary.html">Plan Trip</a>
           <a href="index.html#newsletter">Subscribe</a>
         </nav>
       </div>
@@ -31,89 +29,94 @@
 
     <main>
       <section class="hero">
-        <div class="hero-media article-hero" style="--img:url('images/lucern.jpg');"></div>
-        <div class="container hero-copy">
-          <a class="back-link" href="index.html#journal">← Back to Journal</a>
-          <h1 class="display">Lauterbrunnen</h1>
-          <p class="article-meta">Bernese Oberland • Switzerland • Updated <time>Sep 2025</time></p>
-        </div>
+        <div class="hero-media" style="--img:url('images/lucern.jpg'); height: clamp(400px, 50vw, 600px);"></div>
       </section>
 
       <section class="section">
         <div class="container narrow article-body">
-          <div class="editable" contenteditable="true" aria-label="Intro paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit, arcu id pulvinar lobortis, justo lorem luctus arcu, vitae aliquet ligula mauris et urna. Phasellus vitae efficitur mi, ac vehicula lectus.
-          </div>
+          <a class="back-link" href="index.html#destinations">← Back to Destinations</a>
 
-          <h2>Gallery</h2>
-          <div class="photo-grid three-col">
+          <h1 class="display" style="margin-top: 2rem;">Lauterbrunnen Travel Guide</h1>
+          <p class="article-meta">Lauterbrunnen, Bernese Oberland, Switzerland • Updated January 2025</p>
+
+          <p>Lauterbrunnen is the valley that makes everyone stop and stare. A deep U-shaped valley with cliffs rising 300 meters on both sides, waterfalls tumbling from every direction, and tiny villages perched impossibly high on the valley walls. It's dramatic, beautiful, and surprisingly functional—this isn't a remote wilderness, it's a working alpine community with excellent infrastructure, good hotels, and train connections to everywhere you want to go in the region.</p>
+
+          <p>Where Grindelwald is the famous resort town, Lauterbrunnen is the quieter base—more affordable, less crowded, and arguably more scenic. The valley serves as the gateway to Mürren, Wengen, and Jungfraujoch, but it's worth staying here for the waterfalls alone. This feels like a real alpine village that happens to be spectacularly beautiful, rather than a resort built for tourists.</p>
+
+          <h2>The Waterfalls</h2>
+
+          <p><strong>Staubbach Falls</strong> is the icon—a 300-meter waterfall dropping straight down from the cliff edge into the village. You can walk right up to the base of it from the town center in about 10 minutes. In summer, it's a thin veil of water that catches the light. In spring (snowmelt), it's more dramatic. There's a path that goes behind the falls if you want to get soaked.</p>
+
+          <p><strong>Trümmelbach Falls</strong> are the hidden gem—waterfalls inside the mountain, accessed by tunnels and stairs. The sheer volume of water carving through solid rock is mesmerizing. It's touristy (entry costs CHF 11) but genuinely impressive. The falls drain the glaciers of Eiger, Mönch, and Jungfrau—up to 20,000 liters per second. Wear waterproof clothing; you will get wet.</p>
+
+          <p>Beyond these two, there are 70 other waterfalls scattered throughout the valley. Seriously. You can see many from the train or while hiking. The valley itself is the attraction.</p>
+
+          <div class="photo-grid two-col" style="margin: 2.5rem 0;">
             <figure class="photo-item">
-              <img src="images/lucern.jpg" alt="Swiss valley view" />
-              <figcaption>Lauterbrunnen's valley of waterfalls</figcaption>
+              <img src="images/lucern.jpg" alt="Lauterbrunnen valley and waterfalls" />
             </figure>
             <figure class="photo-item">
-              <img src="images/paris.jpg" alt="Paris cityscape" />
-              <figcaption>European beauty</figcaption>
-            </figure>
-            <figure class="photo-item">
-              <img src="images/marseille.jpg" alt="Marseille Vieux-Port" />
-              <figcaption>Historic ports</figcaption>
-            </figure>
-            <figure class="photo-item">
-              <img src="images/aix-en-provence.jpg" alt="Aix-en-Provence" />
-              <figcaption>Provence countryside</figcaption>
-            </figure>
-            <figure class="photo-item">
-              <img src="images/nice.png" alt="Nice coastline" />
-              <figcaption>French Riviera</figcaption>
+              <img src="images/grindelwald.jpg" alt="Swiss alpine scenery" />
             </figure>
           </div>
 
           <h2>Where to Stay</h2>
-          <div class="grid-two">
-            <div class="editable" contenteditable="true" aria-label="Stay recommendation 1">
-              Curabitur non risus non sapien dictum sagittis. Mauris rhoncus, augue vitae viverra convallis, sapien orci efficitur mauris, at placerat orci risus id eros.
-            </div>
-            <div class="editable" contenteditable="true" aria-label="Stay recommendation 2">
-              Integer molestie, neque vitae volutpat posuere, neque nisl lacinia lorem, vel scelerisque lectus enim id velit. Suspendisse potenti.
-            </div>
-          </div>
 
-          <h2>Where to Eat</h2>
-          <div class="grid-two">
-            <div class="editable" contenteditable="true" aria-label="Eat recommendation 1">
-              Pellentesque ac ante nisi. Morbi in felis venenatis, facilisis risus in, porttitor nunc. Cras vestibulum at justo nec pharetra.
-            </div>
-            <div class="editable" contenteditable="true" aria-label="Eat recommendation 2">
-              Sed sodales, lorem et aliquet elementum, purus ipsum gravida leo, id molestie augue urna ut justo. Maecenas feugiat, velit vitae blandit hendrerit, nisl lacus posuere metus, vitae vehicula leo orci non nunc.
-            </div>
-          </div>
+          <p>Lauterbrunnen is cheaper than Grindelwald, with better access to the region's highlights. Stay here and day-trip to Grindelwald, not the other way around.</p>
+
+          <p><strong>Hotels in the village center</strong> put you near the train station, grocery stores, and restaurants. It's a small village, so everything is walkable. Hotel Oberland and Valley Hostel get good reviews. Expect CHF 100-200 per night depending on season and room type—still expensive, but better value than Grindelwald.</p>
+
+          <p><strong>Camping:</strong> Camping Jungfrau is right in the village with incredible views. If you're on a budget and don't mind basic facilities, this is one of the cheapest ways to experience the Bernese Oberland. Cabins are available if you don't have a tent.</p>
+
+          <p><strong>Nearby villages:</strong> Consider staying up in Mürren (cable car from Lauterbrunnen) for car-free alpine charm and sunrise views, or Wengen (train up the other side) for a traditional mountain resort feel. Both are more expensive but offer different atmospheres.</p>
 
           <h2>What to Do</h2>
-          <div class="editable" contenteditable="true" aria-label="Activities">
-            Nunc auctor diam et ipsum elementum, et pulvinar nibh euismod. Donec vel vestibulum purus. Praesent in sapien id urna tincidunt rutrum. Quisque pulvinar, velit id faucibus facilisis, lacus quam finibus risus, eu semper arcu libero eu lorem.
-          </div>
 
-          <h2>Sample Itinerary</h2>
-          <div class="editable" contenteditable="true" aria-label="Itinerary">
-            Day 1: Lorem ipsum dolor sit amet. Day 2: Vivamus hendrerit arcu id pulvinar. Day 3: Cras vestibulum at justo nec pharetra.
-          </div>
+          <p><strong>Hiking:</strong> The valley is hiking paradise. Trails range from easy valley floor walks to serious mountain routes. Walk from Lauterbrunnen to Stechelberg (45 minutes) along the valley floor for waterfall views. Or take the cable car to Mürren and hike the ridge trails with panoramic views of the Eiger, Mönch, and Jungfrau.</p>
 
-          <h2>Tips</h2>
-          <div class="editable" contenteditable="true" aria-label="Tips">
-            Proin ut massa a justo mattis iaculis. Suspendisse ultricies, ipsum eget fermentum rutrum, nibh neque egestas justo, sit amet feugiat ipsum arcu sit amet urna.
-          </div>
+          <p><strong>Mürren:</strong> Take the cable car up to this car-free village on the cliff edge. The views are spectacular, and it's the starting point for the Schilthorn cable car (James Bond filming location). Even if you don't go all the way up, Mürren itself is worth visiting for lunch and a wander.</p>
+
+          <p><strong>Wengen:</strong> On the opposite side of the valley, accessible by train. Another car-free alpine village with hiking trails and mountain access. Less dramatic than Mürren but equally charming. The train ride up offers great views.</p>
+
+          <p><strong>Jungfraujoch:</strong> Lauterbrunnen is one of two starting points for the journey to the "Top of Europe." The train journey takes about 2.5 hours each way. It's expensive (CHF 200+) but a bucket-list experience on clear days. See separate Jungfraujoch guide for details.</p>
+
+          <p><strong>Just walk around the valley:</strong> Honestly, even if you do nothing else, walking through Lauterbrunnen with the cliffs and waterfalls towering above you is enough. The scenery is absurd. Bring a camera.</p>
+
+          <h2>Where to Eat</h2>
+
+          <p>Lauterbrunnen isn't a foodie destination, but you'll find solid Swiss food at reasonable (by Swiss standards) prices.</p>
+
+          <p><strong>Hotel Oberland Restaurant</strong> serves good traditional fare—fondue, rösti, sausages. Meals run CHF 20-35, which is actually affordable for the region.</p>
+
+          <p><strong>Airtime Cafe</strong> is the local hangout for hikers and climbers. Casual atmosphere, burgers and pizzas, better prices than most tourist restaurants.</p>
+
+          <p><strong>Coop Supermarket:</strong> Your budget-friendly option. Stock up on groceries, grab sandwiches and snacks, and eat outside with the waterfall views. The supermarket has everything you need and costs a fraction of restaurant prices.</p>
+
+          <h2>Practical Tips</h2>
+
+          <p><strong>Use Lauterbrunnen as your base:</strong> It's centrally located with trains to Grindelwald (via Interlaken), Jungfraujoch, Mürren, and Wengen. Hotels are cheaper, it's less touristy, and the scenery rivals anywhere in the region. Unless you specifically need to be in Grindelwald, stay here instead.</p>
+
+          <p><strong>Timing:</strong> Visit in late spring (May-June) when snowmelt makes the waterfalls most dramatic, or summer (July-September) for hiking. Avoid April when trails may still be snowy but waterfalls aren't yet flowing heavily. Winter is quiet and beautiful under snow, but many hiking trails are closed.</p>
+
+          <p><strong>Costs:</strong> Still expensive (it's Switzerland), but more affordable than Grindelwald or Interlaken. Budget CHF 100-150 per day for accommodation, food, and local transport. Cable cars and mountain excursions cost extra—the Schilthorn roundtrip is CHF 100+, Jungfraujoch CHF 200+.</p>
+
+          <p><strong>Weather:</strong> The valley can be cloudy or foggy when the high peaks are clear. Check mountain webcams before committing to expensive excursions. The train to Wengen or cable car to Mürren often breaks through the clouds.</p>
+
+          <p><strong>It's a real village:</strong> Unlike Grindelwald, which feels like a ski resort, Lauterbrunnen is a functioning community. Respect locals, keep noise down in residential areas, and don't block driveways for photos (this happens more than it should).</p>
+
+          <p><strong>Bring rain gear:</strong> With 72 waterfalls, the valley can be misty and damp. Waterproof jacket and good hiking shoes are essential. The spray from waterfalls reaches surprisingly far.</p>
+
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© <span id="year"></span> <span id="footerName">Drifted</span></p>
+        <p>© <span id="year">2025</span> Drifted</p>
         <a class="top-link" href="#" aria-label="Back to top">Back to top ↑</a>
       </div>
     </footer>
 
     <script src="script.js" defer></script>
   </body>
-  </html>
+</html>
