@@ -81,9 +81,22 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
 }
 .logo:hover {
   letter-spacing: 3px;
+}
+.byline {
+  font-family: "Crimson Text", Georgia, serif;
+  font-style: italic;
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  opacity: 0.8;
 }
 .site-nav {
   margin-left: auto;
