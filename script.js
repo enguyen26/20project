@@ -167,9 +167,7 @@
     const filtered = filterDestinations(allDestinations);
     destinationsGrid.innerHTML = filtered.map((d) => (
       `<article class="card">
-        <a class="card-media" href="${d.href || '#'}" style="--img:url('${d.image || ''}');" aria-label="${d.ariaLabel || d.title || ''}">
-          ${d.photoCount ? `<span class="photo-count">${d.photoCount} Photos</span>` : ''}
-        </a>
+        <a class="card-media" href="${d.href || '#'}" style="--img:url('${d.image || ''}');" aria-label="${d.ariaLabel || d.title || ''}"></a>
         <div class="card-body">
           <h3 class="card-title"><a href="${d.href || '#'}">${d.title || ''}</a></h3>
           <p class="card-meta">${d.meta || ''}</p>
