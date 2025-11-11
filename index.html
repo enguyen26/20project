@@ -8,8 +8,8 @@
     <meta name="description" content="Minimal, image-forward travel guides and journal entries inspired by Find Us Lost." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Fonts: Playfair for headings, Inter for body -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <!-- Fonts: Crimson Text for body, Montserrat for headings - Find Us Lost style -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <!-- Favicon is an inline SVG emoji; script updates this via #favicon from content.json.site.faviconEmoji -->
     <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' text-anchor='middle' font-size='64'>✈️</text></svg>'>
@@ -48,50 +48,43 @@
       <section class="section alt">
         <div class="container">
           <div class="section-header">
-            <h2>Find Your Perfect Trip</h2>
-            <p class="lede">Filter destinations by trip type, duration, and style to discover your ideal European adventure.</p>
+            <h2>Your Next Trip Awaits</h2>
+            <p class="lede">Destinations and guides, organized just for you.</p>
           </div>
           
           <div class="filter-section">
             <div class="filter-grid">
               <div class="filter-group">
-                <label class="filter-label">Trip Duration</label>
+                <label class="filter-label">Duration</label>
                 <div class="filter-options">
-                  <button class="filter-btn" data-filter="duration" data-value="weekend">Weekend</button>
-                  <button class="filter-btn" data-filter="duration" data-value="week">1 Week</button>
-                  <button class="filter-btn" data-filter="duration" data-value="two-weeks">2 Weeks</button>
-                  <button class="filter-btn" data-filter="duration" data-value="month">1 Month+</button>
+                  <button class="filter-btn" data-filter="duration" data-value="weekend">24 Hours</button>
+                  <button class="filter-btn" data-filter="duration" data-value="week">3-5 Days</button>
+                  <button class="filter-btn" data-filter="duration" data-value="two-weeks">1-2 Weeks</button>
+                  <button class="filter-btn" data-filter="duration" data-value="month">Summer</button>
+                  <button class="filter-btn" data-filter="duration" data-value="month">Winter</button>
                 </div>
               </div>
-              
+
               <div class="filter-group">
                 <label class="filter-label">Trip Type</label>
                 <div class="filter-options">
-                  <button class="filter-btn" data-filter="type" data-value="romantic">Romantic</button>
-                  <button class="filter-btn" data-filter="type" data-value="family">Family</button>
-                  <button class="filter-btn" data-filter="type" data-value="girls-trip">Girls Trip</button>
-                  <button class="filter-btn" data-filter="type" data-value="solo">Solo</button>
                   <button class="filter-btn" data-filter="type" data-value="adventure">Adventure</button>
+                  <button class="filter-btn" data-filter="type" data-value="romantic">Romance</button>
+                  <button class="filter-btn" data-filter="type" data-value="family">Family Friendly</button>
+                  <button class="filter-btn" data-filter="type" data-value="girls-trip">Girls Trip</button>
+                  <button class="filter-btn" data-filter="type" data-value="solo">Solo Travel</button>
                 </div>
               </div>
-              
+
               <div class="filter-group">
-                <label class="filter-label">Country</label>
+                <label class="filter-label">Keywords</label>
                 <div class="filter-options">
-                  <button class="filter-btn" data-filter="country" data-value="france">France</button>
-                  <button class="filter-btn" data-filter="country" data-value="italy">Italy</button>
-                  <button class="filter-btn" data-filter="country" data-value="switzerland">Switzerland</button>
-                </div>
-              </div>
-              
-              <div class="filter-group">
-                <label class="filter-label">Experience</label>
-                <div class="filter-options">
-                  <button class="filter-btn" data-filter="experience" data-value="beach">Beach</button>
+                  <button class="filter-btn" data-filter="country" data-value="france">Europe</button>
+                  <button class="filter-btn" data-filter="experience" data-value="beach">Beaches</button>
                   <button class="filter-btn" data-filter="experience" data-value="mountains">Mountains</button>
-                  <button class="filter-btn" data-filter="experience" data-value="city">City</button>
-                  <button class="filter-btn" data-filter="experience" data-value="village">Village</button>
-                  <button class="filter-btn" data-filter="experience" data-value="culture">Culture</button>
+                  <button class="filter-btn" data-filter="experience" data-value="city">City Break</button>
+                  <button class="filter-btn" data-filter="type" data-value="adventure">Budget-Friendly</button>
+                  <button class="filter-btn" data-filter="experience" data-value="culture">Instagrammable</button>
                 </div>
               </div>
             </div>
@@ -112,8 +105,7 @@
       <section id="destinations" class="section">
         <div class="container">
           <div class="section-header">
-            <h2>Destinations</h2>
-            <a class="link" href="#journal">View all guides →</a>
+            <h2>Featured Destinations</h2>
           </div>
           <!-- Script injects <article class="card"> items here -->
           <div class="grid cards" id="destinationsGrid"></div>
@@ -124,8 +116,7 @@
       <section id="journal" class="section alt">
         <div class="container">
           <div class="section-header">
-            <h2>From the Journal</h2>
-            <a class="link" href="#">All posts →</a>
+            <h2>Travel Guides</h2>
           </div>
           <!-- Script injects <article class="post"> items here -->
           <div class="grid posts" id="postsGrid"></div>
@@ -135,8 +126,10 @@
       <!-- About: simple paragraph replaced from content.json.about.text -->
       <section id="about" class="section">
         <div class="container narrow">
-          <h2>About</h2>
-          <p id="aboutText">Hi, I’m Elina. This site is a clean, photo-first collection of travel guides and notes — designed to be calm and easy to browse.</p>
+          <div class="about-content">
+            <h2>About</h2>
+            <p id="aboutText">Hi, I'm Elina. This site is a clean, photo-first collection of travel guides and notes — designed to be calm and easy to browse.</p>
+          </div>
         </div>
       </section>
 

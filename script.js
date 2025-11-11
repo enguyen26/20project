@@ -52,7 +52,7 @@
   
   let activeFilters = {};
   
-  // Filter button interactions
+  // Filter button interactions - apply filters automatically on click
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       btn.classList.toggle('active');
@@ -61,13 +61,19 @@
       
       if (btn.classList.contains('active')) {
         if (!activeFilters[filterType]) activeFilters[filterType] = [];
-        activeFilters[filterType].push(filterValue);
+        if (!activeFilters[filterType].includes(filterValue)) {
+          activeFilters[filterType].push(filterValue);
+        }
       } else {
         if (activeFilters[filterType]) {
           activeFilters[filterType] = activeFilters[filterType].filter(v => v !== filterValue);
           if (activeFilters[filterType].length === 0) delete activeFilters[filterType];
         }
       }
+      
+      // Apply filters automatically when clicked
+      renderDestinations();
+      updateFilterCount();
     });
   });
   
@@ -79,7 +85,7 @@
     updateFilterCount();
   });
   
-  // Apply filters
+  // Apply filters button (kept for explicit user action, but auto-apply also works)
   applyFiltersBtn?.addEventListener('click', () => {
     renderDestinations();
     updateFilterCount();
@@ -157,11 +163,13 @@
   // Filter functions
   function renderDestinations() {
     if (!destinationsGrid || !allDestinations.length) return;
-    
+
     const filtered = filterDestinations(allDestinations);
     destinationsGrid.innerHTML = filtered.map((d) => (
       `<article class="card">
-        <a class="card-media" href="${d.href || '#'}" style="--img:url('${d.image || ''}');" aria-label="${d.ariaLabel || d.title || ''}"></a>
+        <a class="card-media" href="${d.href || '#'}" style="--img:url('${d.image || ''}');" aria-label="${d.ariaLabel || d.title || ''}">
+          ${d.photoCount ? `<span class="photo-count">${d.photoCount} Photos</span>` : ''}
+        </a>
         <div class="card-body">
           <h3 class="card-title"><a href="${d.href || '#'}">${d.title || ''}</a></h3>
           <p class="card-meta">${d.meta || ''}</p>
@@ -178,39 +186,17 @@
       for (const [filterType, values] of Object.entries(activeFilters)) {
         if (values.length === 0) continue;
         
-        // Country filter
-        if (filterType === 'country') {
-          const country = getCountryFromTitle(dest.title);
-          if (!values.includes(country)) return false;
-        }
+        // Get filter values from destination metadata
+        const destFilters = dest.filters || {};
+        const destFilterValues = destFilters[filterType] || [];
         
-        // Trip type and experience filters would need to be added to content.json
-        // For now, we'll do basic matching
-        if (filterType === 'experience') {
-          const experience = getExperienceFromMeta(dest.meta);
-          if (!values.some(v => experience.includes(v))) return false;
-        }
+        // Check if any of the selected filter values match the destination's filter values
+        const hasMatch = values.some(value => destFilterValues.includes(value));
+        
+        if (!hasMatch) return false;
       }
       return true;
     });
-  }
-  
-  function getCountryFromTitle(title) {
-    if (title.includes('France')) return 'france';
-    if (title.includes('Italy')) return 'italy';
-    if (title.includes('Switzerland')) return 'switzerland';
-    return 'france'; // default
-  }
-  
-  function getExperienceFromMeta(meta) {
-    const metaLower = meta.toLowerCase();
-    const experiences = [];
-    if (metaLower.includes('beach') || metaLower.includes('coast') || metaLower.includes('seaside')) experiences.push('beach');
-    if (metaLower.includes('mountain') || metaLower.includes('alpine') || metaLower.includes('peak')) experiences.push('mountains');
-    if (metaLower.includes('city') || metaLower.includes('urban')) experiences.push('city');
-    if (metaLower.includes('village') || metaLower.includes('medieval') || metaLower.includes('hilltop')) experiences.push('village');
-    if (metaLower.includes('culture') || metaLower.includes('art') || metaLower.includes('museum')) experiences.push('culture');
-    return experiences;
   }
   
   function updateFilterCount() {

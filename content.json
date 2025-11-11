@@ -17,119 +17,224 @@
       "meta": "City of Light • Museums, cafés, and Seine strolls",
       "image": "images/paris.jpg",
       "href": "paris.html",
-      "ariaLabel": "Paris, France"
+      "ariaLabel": "Paris, France",
+      "photoCount": 28,
+      "filters": {
+        "country": ["france"],
+        "duration": ["weekend", "week", "two-weeks", "month"],
+        "type": ["romantic", "family", "solo", "adventure"],
+        "experience": ["city", "culture"]
+      }
     },
     {
       "title": "Positano, Italy",
       "meta": "Amalfi Coast • Cliffside village and beach clubs",
       "image": "images/positano.jpg",
       "href": "positano.html",
-      "ariaLabel": "Positano, Italy"
+      "ariaLabel": "Positano, Italy",
+      "photoCount": 23,
+      "filters": {
+        "country": ["italy"],
+        "duration": ["weekend", "week", "two-weeks"],
+        "type": ["romantic", "girls-trip", "adventure"],
+        "experience": ["beach", "village"]
+      }
     },
     {
       "title": "Capri, Italy",
       "meta": "Amalfi Coast • Blue Grotto and island luxury",
       "image": "images/capri.jpg",
       "href": "capri.html",
-      "ariaLabel": "Capri, Italy"
+      "ariaLabel": "Capri, Italy",
+      "photoCount": 18,
+      "filters": {
+        "country": ["italy"],
+        "duration": ["weekend", "week"],
+        "type": ["romantic", "girls-trip"],
+        "experience": ["beach", "village"]
+      }
     },
     {
       "title": "Port de Cassis, France",
       "meta": "Côte d'Azur • Calanques, pastel villas, and seaside lunches",
       "image": "images/portdecassis.jpeg",
       "href": "port-de-cassis.html",
-      "ariaLabel": "Port of Cassis, France"
+      "ariaLabel": "Port of Cassis, France",
+      "filters": {
+        "country": ["france"],
+        "duration": ["weekend", "week", "two-weeks"],
+        "type": ["romantic", "family", "girls-trip"],
+        "experience": ["beach", "village"]
+      }
     },
     {
       "title": "Nice, France",
       "meta": "French Riviera • Promenade des Anglais and Old Town",
       "image": "images/nice.png",
       "href": "nice.html",
-      "ariaLabel": "Nice, France"
+      "ariaLabel": "Nice, France",
+      "filters": {
+        "country": ["france"],
+        "duration": ["weekend", "week", "two-weeks"],
+        "type": ["romantic", "family", "girls-trip", "solo"],
+        "experience": ["beach", "city", "culture"]
+      }
     },
     {
       "title": "Monaco",
       "meta": "Monte-Carlo • Port Hercule and cliffside glamour",
       "image": "images/monaco.jpeg",
       "href": "monaco.html",
-      "ariaLabel": "Monaco"
+      "ariaLabel": "Monaco",
+      "filters": {
+        "country": ["france"],
+        "duration": ["weekend", "week"],
+        "type": ["romantic", "girls-trip"],
+        "experience": ["city", "culture"]
+      }
     },
     {
       "title": "Marseille, France",
       "meta": "Vieux-Port • Bouillabaisse, Mucem, and street art in Le Panier",
       "image": "images/marseille copy.jpg",
       "href": "marseille.html",
-      "ariaLabel": "Marseille, France"
+      "ariaLabel": "Marseille, France",
+      "filters": {
+        "country": ["france"],
+        "duration": ["weekend", "week"],
+        "type": ["solo", "adventure", "family"],
+        "experience": ["city", "culture"]
+      }
     },
     {
       "title": "Èze Village, France",
       "meta": "Hilltop • Exotic garden views and stone lanes",
       "image": "images/ezevillage.jpg",
       "href": "eze-village.html",
-      "ariaLabel": "Èze Village, France"
+      "ariaLabel": "Èze Village, France",
+      "filters": {
+        "country": ["france"],
+        "duration": ["weekend"],
+        "type": ["romantic", "solo", "adventure"],
+        "experience": ["village", "culture"]
+      }
     },
     {
       "title": "Antibes, France",
       "meta": "Côte d'Azur • Billionaire Bay and coastal charm",
       "image": "images/antibes.jpg",
       "href": "antibes.html",
-      "ariaLabel": "Antibes, France"
+      "ariaLabel": "Antibes, France",
+      "filters": {
+        "country": ["france"],
+        "duration": ["weekend", "week"],
+        "type": ["romantic", "family", "girls-trip"],
+        "experience": ["beach", "city"]
+      }
     },
     {
       "title": "Aix-en-Provence, France",
       "meta": "Markets • Cours Mirabeau, fountains, and Cézanne's atelier",
       "image": "images/aixenprovence.png",
       "href": "aix-en-provence.html",
-      "ariaLabel": "Aix-en-Provence, France"
+      "ariaLabel": "Aix-en-Provence, France",
+      "filters": {
+        "country": ["france"],
+        "duration": ["weekend", "week"],
+        "type": ["romantic", "solo", "family"],
+        "experience": ["city", "culture"]
+      }
     },
     {
       "title": "Moustiers Sainte Marie, France",
       "meta": "Provence • Medieval village and pottery tradition",
       "image": "images/moustiersaintemarie.jpg",
       "href": "moustiers-sainte-marie.html",
-      "ariaLabel": "Moustiers Sainte Marie, France"
+      "ariaLabel": "Moustiers Sainte Marie, France",
+      "filters": {
+        "country": ["france"],
+        "duration": ["weekend"],
+        "type": ["romantic", "solo", "adventure"],
+        "experience": ["village", "culture"]
+      }
     },
     {
       "title": "Zurich, Switzerland",
       "meta": "Swiss Alps • Lake views and old town charm",
       "image": "images/zurich.jpg",
       "href": "zurich.html",
-      "ariaLabel": "Zurich, Switzerland"
+      "ariaLabel": "Zurich, Switzerland",
+      "filters": {
+        "country": ["switzerland"],
+        "duration": ["weekend", "week", "two-weeks"],
+        "type": ["romantic", "family", "solo"],
+        "experience": ["city", "culture"]
+      }
     },
     {
       "title": "Grindelwald, Switzerland",
       "meta": "Jungfrau Region • Alpine village and hiking base",
       "image": "images/grindelwald.jpg",
       "href": "grindelwald.html",
-      "ariaLabel": "Grindelwald, Switzerland"
+      "ariaLabel": "Grindelwald, Switzerland",
+      "filters": {
+        "country": ["switzerland"],
+        "duration": ["week", "two-weeks"],
+        "type": ["adventure", "romantic", "family"],
+        "experience": ["mountains", "village"]
+      }
     },
     {
       "title": "Iseltwald, Switzerland",
       "meta": "Bernese Oberland • Crystal lake and mountain backdrop",
       "image": "images/iseltwald.jpg",
       "href": "iseltwald.html",
-      "ariaLabel": "Iseltwald, Switzerland"
+      "ariaLabel": "Iseltwald, Switzerland",
+      "filters": {
+        "country": ["switzerland"],
+        "duration": ["weekend", "week"],
+        "type": ["romantic", "solo", "adventure"],
+        "experience": ["mountains", "village"]
+      }
     },
     {
       "title": "Jungfraujoch, Switzerland",
       "meta": "Top of Europe • Highest railway station and glacier views",
       "image": "images/lucern.jpg",
       "href": "jungfraujoch.html",
-      "ariaLabel": "Jungfraujoch, Switzerland"
+      "ariaLabel": "Jungfraujoch, Switzerland",
+      "filters": {
+        "country": ["switzerland"],
+        "duration": ["weekend", "week"],
+        "type": ["adventure", "family", "solo"],
+        "experience": ["mountains"]
+      }
     },
     {
       "title": "Lauterbrunnen, Switzerland",
       "meta": "Valley of 72 Waterfalls • Swiss alpine paradise",
       "image": "images/lucern.jpg",
       "href": "lauterbrunnen.html",
-      "ariaLabel": "Lauterbrunnen, Switzerland"
+      "ariaLabel": "Lauterbrunnen, Switzerland",
+      "filters": {
+        "country": ["switzerland"],
+        "duration": ["week", "two-weeks"],
+        "type": ["adventure", "romantic", "solo"],
+        "experience": ["mountains", "village"]
+      }
     },
     {
       "title": "Bürglen, Switzerland",
       "meta": "Swiss Alps • Traditional village and mountain views",
       "image": "images/burglen.jpg",
       "href": "burglen.html",
-      "ariaLabel": "Bürglen, Switzerland"
+      "ariaLabel": "Bürglen, Switzerland",
+      "filters": {
+        "country": ["switzerland"],
+        "duration": ["weekend", "week"],
+        "type": ["romantic", "solo", "adventure"],
+        "experience": ["mountains", "village"]
+      }
     }
   ],
   "posts": [
