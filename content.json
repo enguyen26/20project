@@ -172,54 +172,15 @@
       }
     },
     {
-      "title": "Grindelwald, Switzerland",
-      "meta": "Jungfrau Region • Alpine village and hiking base",
+      "title": "Bernese Oberland, Switzerland",
+      "meta": "Lauterbrunnen, Grindelwald, Jungfraujoch • Alpine valleys and glacier views",
       "image": "images/grindelwald.jpg",
-      "href": "grindelwald.html",
-      "ariaLabel": "Grindelwald, Switzerland",
+      "href": "bernese-oberland.html",
+      "ariaLabel": "Bernese Oberland, Switzerland",
       "filters": {
         "country": ["switzerland"],
         "duration": ["week", "two-weeks"],
         "type": ["adventure", "romantic", "family"],
-        "experience": ["mountains", "village"]
-      }
-    },
-    {
-      "title": "Iseltwald, Switzerland",
-      "meta": "Bernese Oberland • Crystal lake and mountain backdrop",
-      "image": "images/iseltwald.jpg",
-      "href": "iseltwald.html",
-      "ariaLabel": "Iseltwald, Switzerland",
-      "filters": {
-        "country": ["switzerland"],
-        "duration": ["weekend", "week"],
-        "type": ["romantic", "solo", "adventure"],
-        "experience": ["mountains", "village"]
-      }
-    },
-    {
-      "title": "Jungfraujoch, Switzerland",
-      "meta": "Top of Europe • Highest railway station and glacier views",
-      "image": "images/lucern.jpg",
-      "href": "jungfraujoch.html",
-      "ariaLabel": "Jungfraujoch, Switzerland",
-      "filters": {
-        "country": ["switzerland"],
-        "duration": ["weekend", "week"],
-        "type": ["adventure", "family", "solo"],
-        "experience": ["mountains"]
-      }
-    },
-    {
-      "title": "Lauterbrunnen, Switzerland",
-      "meta": "Valley of 72 Waterfalls • Swiss alpine paradise",
-      "image": "images/lucern.jpg",
-      "href": "lauterbrunnen.html",
-      "ariaLabel": "Lauterbrunnen, Switzerland",
-      "filters": {
-        "country": ["switzerland"],
-        "duration": ["week", "two-weeks"],
-        "type": ["adventure", "romantic", "solo"],
         "experience": ["mountains", "village"]
       }
     },
@@ -234,6 +195,58 @@
         "duration": ["weekend", "week"],
         "type": ["romantic", "solo", "adventure"],
         "experience": ["mountains", "village"]
+      }
+    },
+    {
+      "title": "Hanoi, Vietnam",
+      "meta": "Old Quarter • Street food, history, and chaotic charm",
+      "image": "images/hanoi.jpeg",
+      "href": "hanoi.html",
+      "ariaLabel": "Hanoi, Vietnam",
+      "filters": {
+        "country": ["vietnam"],
+        "duration": ["weekend", "week"],
+        "type": ["solo", "adventure", "family"],
+        "experience": ["city", "culture"]
+      }
+    },
+    {
+      "title": "Ho Chi Minh City, Vietnam",
+      "meta": "Saigon • Modern energy, rooftop bars, and street food",
+      "image": "images/hochiminhcitylandmark.jpeg",
+      "href": "ho-chi-minh-city.html",
+      "ariaLabel": "Ho Chi Minh City, Vietnam",
+      "filters": {
+        "country": ["vietnam"],
+        "duration": ["weekend", "week"],
+        "type": ["solo", "adventure", "family"],
+        "experience": ["city", "culture"]
+      }
+    },
+    {
+      "title": "Phu Quoc, Vietnam",
+      "meta": "Island Paradise • Beaches, night markets, and sunsets",
+      "image": "images/phuquocbeach.jpeg",
+      "href": "phu-quoc.html",
+      "ariaLabel": "Phu Quoc, Vietnam",
+      "filters": {
+        "country": ["vietnam"],
+        "duration": ["week", "two-weeks"],
+        "type": ["romantic", "family", "adventure"],
+        "experience": ["beach", "island"]
+      }
+    },
+    {
+      "title": "New York City, USA",
+      "meta": "The City • Museums, rooftops, and endless energy",
+      "image": "images/nycsky.jpeg",
+      "href": "nyc.html",
+      "ariaLabel": "New York City, USA",
+      "filters": {
+        "country": ["usa"],
+        "duration": ["weekend", "week", "two-weeks"],
+        "type": ["solo", "family", "girls-trip", "adventure"],
+        "experience": ["city", "culture"]
       }
     }
   ],
